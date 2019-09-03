@@ -1,0 +1,187 @@
+header {
+
+    .nicotine-warning {
+        background-color: $clr-homepage-warning-bg;
+        color: #F7FBFC;
+        height: 5.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+// ******** Homepage Section ********
+
+#homepage-section {
+    padding-top: 27vh;
+
+    h1.homepage-hdr {
+        color: $clr-page-hdr-grey;
+        font-size: 4.5rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .homepage-sub-hdr {
+        color: $clr-accent;
+        font-size: 3.3rem;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .homepage-content {
+        display: flex;
+        margin-top: 4rem;
+
+        .homepage-left-side {
+
+            .homepage-intro-txt-sub-hdr {
+                font-size: 3.4rem;
+                color: $clr-section-hdr-dark;
+                font-weight: 900;
+                margin-top: 12rem;
+            }
+
+            img {
+                margin-top: 1rem;
+            }
+
+            .homepage-intro-txt {
+                margin-top: 2rem;
+                line-height: 1.5;
+            }
+
+            .homepage-btn {
+                margin-top: 3.6rem;
+                background-color: #333333;
+                border-radius: .3rem;
+                height: 5.3rem;
+
+                a {
+                    text-decoration: none;
+                    color: $clr-accent;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    padding: 1.6rem 2.7rem;
+                    @include home-btn-hover;
+
+                    &:hover {
+                        background-color: #212121;
+                    }
+                }
+            }
+        }
+
+        // div.homepage-right-side {
+        //     width: 100%;
+
+        //     img {
+        //         width: 100%;
+        //     }
+        // }
+
+    }
+}
+
+// ******** About Section ********
+
+#about-section {
+    background-color: $clr-about-bg;
+    padding: 8.8rem 0;
+    margin-top: 8rem;
+
+    .about-hdr {
+        font-size: 4.5rem;
+        font-weight: 700;
+        color: $clr-page-hdr-grey;
+        text-align: center;
+        border-bottom: solid rgba(189, 189, 189, .25) 1px;
+        padding-bottom: 1rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    img {
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .about-paragraph-1,
+    .about-paragraph-2 {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $clr-main-txt;
+        text-align: center;
+        line-height: 1.5;
+        width: 80%;
+        margin: 3rem auto 0 auto;
+
+        span {
+            color: $clr-accent;
+
+            a {
+                text-decoration: none;
+                color: $clr-accent;
+
+                &:visited {
+                    color: $clr-accent;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .about-btn {
+        margin: 3.6rem auto;
+        background-color: $clr-accent;
+        border-radius: .3rem;
+        height: 5.3rem;
+        display: block;
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.6rem;
+            font-weight: 500;
+            padding: 1.6rem 2.7rem;
+            @include home-btn-hover;
+
+            &:hover {
+                background-color: rgb(126, 174, 58);
+                color: #212121;
+            }
+        }
+    }
+}
+
+
+// ******** Top Picks Section ********
+
+#top-picks-section {
+    background-image: url('/imgs/top-picks-section/compressed/top-picks-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10rem 0;
+    display: flex;
+
+    .top-picks-hdr {
+        font-size: 4.5rem;
+        font-weight: 700;
+        color: $clr-section-hdr-dark;
+        text-align: center;
+        padding-bottom: 1rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .top-picks-products-section {
+        margin-top: 8rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

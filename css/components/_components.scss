@@ -1,0 +1,180 @@
+.product-box {
+    width: 36rem;
+    height: 42.6rem;
+    padding: 2.7rem;
+    margin: 1.5rem;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: .3rem;
+    -webkit-box-shadow: 4px 4px 5px -4px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 4px 4px 5px -4px rgba(0, 0, 0, 0.12);
+    box-shadow: 4px 4px 5px -4px rgba(0, 0, 0, 0.12);
+
+    .product-desc {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: $clr-main-txt;
+    }
+
+    .product-category-and-rating {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        border-top: solid rgba(189, 189, 189, .25) 1px;
+        border-bottom: solid rgba(189, 189, 189, .25) 1px;
+        padding: 1.5rem 0;
+        line-height: 1.7;
+
+        .product-category {
+            font-size: 1.2rem;
+            text-align: left;
+
+            a {
+                text-decoration: none;
+                color: $clr-accent;
+                font-weight: 500;
+
+                &:visited {
+                    color: $clr-accent;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+        }
+
+        .product-rating {
+            font-size: 1.2rem;
+            text-align: right;
+        }
+    }
+
+    .buy-now-btn {
+        padding: 1.5rem;
+        margin-top: 2rem;
+        background-color: $clr-product-buy-btn;
+        border-radius: .3rem;
+        color: #F5F5F5;
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: none;
+        @include product-btn-hover;
+
+        &:hover {
+            background-color: #242424;
+        }
+
+
+    }
+}
+
+
+// ******** Contact Section ********
+
+#contact-section {
+    background-color: $clr-homepage-warning-bg;
+    padding: 10rem 0;
+
+    .contact-hdr {
+        font-size: 4.5rem;
+        font-weight: 700;
+        color: $clr-contact-hdr;
+        text-align: center;
+        border-bottom: solid rgba(189, 189, 189, .05) 1px;
+        padding-bottom: 1rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .map-and-contact-form {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+
+        .contact-form {
+            margin-top: auto;
+
+            label {
+                display: block;
+                text-transform: uppercase;
+                color: $clr-contact-txt;
+                font-weight: 400;
+                margin-top: 2rem;
+            }
+
+            input {
+                width: 57rem;
+                height: 4rem;
+                border-radius: .3rem;
+                border: none;
+                margin-top: 1rem;
+            }
+
+            textarea {
+                width: 57rem;
+                height: 12.3rem;
+                border-radius: .3rem;
+                border: none;
+                margin-top: 1rem;
+            }
+
+            .form-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                input {
+                    padding: 2rem;
+                    margin-top: 1rem;
+                    background-color: $clr-accent;
+                    color: $clr-contact-txt;
+                    font-size: 1.6rem;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// ******** Contact Section ********
+
+
+footer {
+    padding: 10rem 0;
+    background-color: $clr-footer-bg;
+    color: $clr-footer-txt;
+
+    .footer-top-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .navigation,
+        .age-restriction,
+        .affilates,
+        .follows-us,
+        .newsletter {
+            width: 15%;
+        }
+    }
+
+    .footer-btm-section {
+        margin-top: 10rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        .footer-copyright-info {
+            margin-top: auto;
+            padding: 0 2rem;
+        }
+    }
+}
