@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vape Views | Top rated Vape Coils</title>
+    <title>VapeViews | Top rated Vape Coils</title>
     <link rel="stylesheet" href="/css/main.css">
     <script src="https://kit.fontawesome.com/65b5a983fe.js"></script>
 </head>
@@ -17,30 +17,6 @@
 /////////////////////////////////////////////////////////////////////////// -->
 
     <header>
-
-        <!--    /////////////////////////////////////////////////////////////////////
-                                    Hamburger Menu: SVG
-///////////////////////////////////////////////////////////////////////////-->
-
-        <div class="hamburger-wrapper">
-            <div class="hamburger-icon">
-                <a href="#" onclick="openSlideMenu()">
-                    <svg width="34" height="19" viewBox="0 0 34 19">
-                        <defs>
-                            <clipPath id="a">
-                                <rect width="34" height="19" fill="none" />
-                            </clipPath>
-                        </defs>
-                        <g clip-path="url(#a)">
-                            <line x2="34" transform="translate(0 1.5)" fill="none" stroke="#9f9f9f" stroke-width="3" />
-                            <line x2="28" transform="translate(6 9.5)" fill="none" stroke="#9f9f9f" stroke-width="3" />
-                            <line x2="20" transform="translate(14 17.5)" fill="none" stroke="#9f9f9f"
-                                stroke-width="3" />
-                        </g>
-                    </svg>
-                </a>
-            </div>
-        </div>
 
         <!--    /////////////////////////////////////////////////////////////////////
                                     Top Nav
@@ -72,12 +48,36 @@
                     <img src="/imgs/top-nav/stars.png" alt="VapeViews 5 Star Vapes and Vape products">
                 </div>
 
-                <div class="search-area">
-                    <div class="search-bar">
-                        <input type="text" placeholder="Search for products...">
-                    </div>
-                    <div class="search-btn">
-                        <a href="#">Search</a>
+                <div class="mobile-socials-area">
+                    <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <!--    /////////////////////////////////////////////////////////////////////
+                                    Hamburger Menu: SVG
+///////////////////////////////////////////////////////////////////////////-->
+
+                <div class="hamburger-wrapper">
+                    <div class="hamburger-icon">
+                        <a href="#" onclick="openSlideMenu()">
+                            <svg width="34" height="19" viewBox="0 0 34 19">
+                                <defs>
+                                    <clipPath id="a">
+                                        <rect width="34" height="19" fill="none" />
+                                    </clipPath>
+                                </defs>
+                                <g clip-path="url(#a)">
+                                    <line x2="34" transform="translate(0 1.5)" fill="none" stroke="#9f9f9f"
+                                        stroke-width="3" />
+                                    <line x2="28" transform="translate(6 9.5)" fill="none" stroke="#9f9f9f"
+                                        stroke-width="3" />
+                                    <line x2="20" transform="translate(14 17.5)" fill="none" stroke="#9f9f9f"
+                                        stroke-width="3" />
+                                </g>
+                            </svg>
+                        </a>
                     </div>
                 </div>
 
@@ -89,7 +89,7 @@
                 <li><a href="/pages/e-liquids.html">E-Liquids</a></li>
                 <li><a href="/pages/vape-kits.html">Vape Kits</a></li>
                 <li><a href="/pages/vape-tanks.html">Tanks</a></li>
-                <li><a href="/pages/vape-coils.html">Coils</a></li>
+                <li><a href="/pages/vape-coils.html" class="active">Coils</a></li>
                 <li><a href="/pages/vape-accessories.html">Accessories</a></li>
             </ul>
         </div>
@@ -97,252 +97,289 @@
         <!--    /////////////////////////////////////////////////////////////////////
                                      Mobile Menu
 ///////////////////////////////////////////////////////////////////////////-->
-        <div class="mobile-menu">
-            <a href="#" class="close-btn" onclick="closeSlideMenu()">&times;</a>
+
+        <div id="mobile-menu">
+            <a href="/index.html" class="mobile-menu-logo">
+                <svg width="81.956" height="43" viewBox="0 0 81.956 43">
+                    <defs>
+                        <clipPath id="a">
+                            <rect width="81.956" height="43" fill="none" />
+                        </clipPath>
+                    </defs>
+                    <g clip-path="url(#a)"><text transform="translate(0 33)" fill="#fff" font-size="36"
+                            font-family="Xirod-Regular, Xirod" letter-spacing="0.1em">
+                            <tspan x="0" y="0">V</tspan>
+                        </text>
+                        <g transform="translate(26.956 11.005)"><text transform="translate(9.841 9)" fill="#8dc63f"
+                                font-size="10" font-family="Xirod-Regular, Xirod" letter-spacing="0.1em">
+                                <tspan x="0" y="0">ape</tspan>
+                            </text><text transform="translate(0 24.408)" fill="#fff" font-size="15"
+                                font-family="Homoarakhn" letter-spacing="0.1em">
+                                <tspan x="0" y="0">iews</tspan>
+                            </text></g>
+                    </g>
+                </svg>
+            </a>
+            <div class="close-btn-wrapper">
+                <a href="#" class="close-btn" onclick="closeSlideMenu()">&times;</a>
+            </div>
             <ul class="mobile-menu-links">
-                <li>Home</li>
-                <li>E-Liquids</li>
-                <li>Vape Kits</li>
-                <li>Tanks</li>
-                <li>Coils</li>
-                <li>Accessories</li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/e-liquids.html">E-Liquids</a></li>
+                <li><a href="/pages/vape-kits.html">Vape Kits</a></li>
+                <li><a href="/pages/vape-tanks.html">Tanks</a></li>
+                <li><a href="/pages/vape-coils.html" class="active">Coils</a></li>
+                <li><a href="/pages/vape-accessories.html">Accessories</a></li>
             </ul>
+
+            <div class="mobile-socials-area">
+                <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
 
     </header>
 
-    <div class="container">
-
-        <!--    /////////////////////////////////////////////////////////////////////
+    <!--    /////////////////////////////////////////////////////////////////////
                                     Main Section
 ///////////////////////////////////////////////////////////////////////////-->
 
-        <section class="vape-coils-hdr-section">
-            <h1 class="vape-coils-hdr">Vape Coils</h1>
-            <p class="vape-coils-sub-hdr">Our top rated Vape Tanks</p>
-            <img src="/imgs/page-title-stars.png" alt="Vape Views 5 star Vape Tanks">
-            <img src="/imgs/vape-coils-page/vape-coils-page-top-img.png" alt="Vape Views top rated Vape Coils">
-        </section>
+    <section id="vape-coils-hdr-section" class="container">
+        <h1 class="vape-coils-hdr">Vape Coils</h1>
+        <p class="vape-coils-sub-hdr">Our top rated Vape Tanks</p>
+        <img src="/imgs/page-title-stars.png" alt="VapeViews 5 star Vape Tanks" class="vape-coils-hdr-stars">
+        <img src="/imgs/vape-coils-page/vape-coils-page-top-img.png" alt="VapeViews top rated Vape Coils"
+            class="vape-coils-top-img">
+    </section>
 
-        <section class="vape-coils-product-section">
+    <section class="vape-coils-product-section">
 
-            <div class="product-1">
-                <img src="/imgs/vape-coils-page/products/vape-coils-img-1.png" alt="Vape Views top rated Vape Coils">
-                <h3 class="product-desc">Innokin Endura T18E Shisha Vape Kit</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-coils.html">VAPE COILS</a>
+        <div class="container">
+            <div class="products-wrapper">
+                <div class="product-1 product-box">
+                    <img src="/imgs/vape-coils-page/products/vape-coils-img-1.png" alt="VapeViews top rated Vape Coils">
+                    <h3 class="product-desc">Innokin Endura T18E Shisha Vape Kit</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-coils.html">VAPE COILS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Innokin-Endura-Shisha-1-5ohm-coils/dp/B074KG5BM6/ref=sr_1_1?keywords=vape+coils&qid=1567368052&s=drugstore&sr=1-1"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Innokin-Endura-Shisha-1-5ohm-coils/dp/B074KG5BM6/ref=sr_1_1?keywords=vape+coils&qid=1567368052&s=drugstore&sr=1-1"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-2">
-                <img src="/imgs/vape-coils-page/products/vape-coils-img-2.png" alt="Vape Views top rated Vape Coils">
-                <h3 class="product-desc">Innokin iSub Standard Coil 0.5 Ohm</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-coils.html">VAPE COILS</a>
+                <div class="product-2 product-box">
+                    <img src="/imgs/vape-coils-page/products/vape-coils-img-2.png" alt="VapeViews top rated Vape Coils">
+                    <h3 class="product-desc">Innokin iSub Standard Coil 0.5 Ohm</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-coils.html">VAPE COILS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Innokin-iSub-Standard-Verification-Sticker/dp/B01569S8X0/ref=sr_1_4?keywords=vape+coils&qid=1567368315&s=drugstore&sr=1-4"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Innokin-iSub-Standard-Verification-Sticker/dp/B01569S8X0/ref=sr_1_4?keywords=vape+coils&qid=1567368315&s=drugstore&sr=1-4"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-3">
-                <img src="/imgs/vape-coils-page/products/vape-coils-img-3.png" alt="Vape Views top rated Vape Coils">
-                <h3 class="product-desc">GS Air Dual Coils - 1.5 ohm</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-coils.html">VAPE COILS</a>
+                <div class="product-3 product-box">
+                    <img src="/imgs/vape-coils-page/products/vape-coils-img-3.png" alt="VapeViews top rated Vape Coils">
+                    <h3 class="product-desc">GS Air Dual Coils - 1.5 ohm</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-coils.html">VAPE COILS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/GS-Air-Dual-Coils-Pack/dp/B00UZ4BB4A/ref=sr_1_14?keywords=vape+coils&qid=1567368315&s=drugstore&sr=1-14"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/GS-Air-Dual-Coils-Pack/dp/B00UZ4BB4A/ref=sr_1_14?keywords=vape+coils&qid=1567368315&s=drugstore&sr=1-14"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-4">
-                <img src="/imgs/vape-coils-page/products/vape-coils-img-4.png" alt="Vape Views top rated Vape Coils">
-                <h3 class="product-desc">Smok Vape Pen 22 Mesh Coils - 0.15 Ohm</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-coils.html">VAPE COILS</a>
+                <div class="product-4 product-box">
+                    <img src="/imgs/vape-coils-page/products/vape-coils-img-4.png" alt="VapeViews top rated Vape Coils">
+                    <h3 class="product-desc">Smok Vape Pen 22 Mesh Coils - 0.15 Ohm</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-coils.html">VAPE COILS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Smok-Vape-Pen-Mesh-Coils/dp/B07D7C63XP/ref=sr_1_16?keywords=vape+coils&qid=1567368315&s=drugstore&sr=1-16"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Smok-Vape-Pen-Mesh-Coils/dp/B07D7C63XP/ref=sr_1_16?keywords=vape+coils&qid=1567368315&s=drugstore&sr=1-16"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-5">
-                <img src="/imgs/vape-coils-page/products/vape-coils-img-5.png" alt="Vape Views top rated Vape Coils">
-                <h3 class="product-desc">INNOKIN Prism S T20S Replacement Coils 0.8ohm for Endura T20s</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-coils.html">VAPE COILS</a>
+                <div class="product-5 product-box">
+                    <img src="/imgs/vape-coils-page/products/vape-coils-img-5.png" alt="VapeViews top rated Vape Coils">
+                    <h3 class="product-desc">INNOKIN Prism S T20S Replacement Coils 0.8ohm for Endura T20s</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-coils.html">VAPE COILS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/INNOKIN-Replacement-EZ-Watt-Atomizer-Starter/dp/B07MN99XLF/ref=sr_1_27?keywords=vape+coils&qid=1567368702&s=drugstore&sr=1-27"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/INNOKIN-Replacement-EZ-Watt-Atomizer-Starter/dp/B07MN99XLF/ref=sr_1_27?keywords=vape+coils&qid=1567368702&s=drugstore&sr=1-27"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-6">
-                <img src="/imgs/vape-coils-page/products/vape-coils-img-6.png" alt="Vape Views top rated Vape Coils">
-                <h3 class="product-desc">OBS Cube Replacement Coil M1 Mesh 0.2ohm</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-coils.html">VAPE COILS</a>
+                <div class="product-6 product-box">
+                    <img src="/imgs/vape-coils-page/products/vape-coils-img-6.png" alt="VapeViews top rated Vape Coils">
+                    <h3 class="product-desc">OBS Cube Replacement Coil M1 Mesh 0.2ohm</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-coils.html">VAPE COILS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/OBS-Cube-Replacement-Coil-0-2ohm/dp/B07KJHPDBP/ref=sr_1_33?keywords=vape+coils&qid=1567368917&s=drugstore&sr=1-33"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/OBS-Cube-Replacement-Coil-0-2ohm/dp/B07KJHPDBP/ref=sr_1_33?keywords=vape+coils&qid=1567368917&s=drugstore&sr=1-33"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-7">
-                <img src="/imgs/vape-coils-page/products/vape-coils-img-7.png" alt="Vape Views top rated Vape Coils">
-                <h3 class="product-desc">Kanger 10 x 1.8 Ohm Coil Heads</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/e-liquids.html">VAPE KITS</a>
+                <div class="product-7 product-box">
+                    <img src="/imgs/vape-coils-page/products/vape-coils-img-7.png" alt="VapeViews top rated Vape Coils">
+                    <h3 class="product-desc">Kanger 10 x 1.8 Ohm Coil Heads</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/e-liquids.html">VAPE KITS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Kanger-10-1-8-Coil-Heads/dp/B00KDQHU1I/ref=sr_1_37?keywords=vape+coils&qid=1567368917&s=drugstore&sr=1-37"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Kanger-10-1-8-Coil-Heads/dp/B00KDQHU1I/ref=sr_1_37?keywords=vape+coils&qid=1567368917&s=drugstore&sr=1-37"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-8">
-                <img src="/imgs/vape-coils-page/products/vape-coils-img-8.png" alt="Vape Views top rated Vape Coils">
-                <h3 class="product-desc">NOVEL Vape electronic cigarette e cig 5X Mini protank coil fit all protank
-                    atomiser</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-coils.html">VAPE COILS</a>
+                <div class="product-8 product-box">
+                    <img src="/imgs/vape-coils-page/products/vape-coils-img-8.png" alt="VapeViews top rated Vape Coils">
+                    <h3 class="product-desc">NOVEL Vape electronic cigarette e cig 5X Mini protank coil fit all protank
+                        atomiser</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-coils.html">VAPE COILS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/NOVEL-electronic-cigarette-atomiser-nicotine/dp/B01K6HSN96/ref=sr_1_64?keywords=vape+coils&qid=1567369151&s=drugstore&sr=1-64"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/NOVEL-electronic-cigarette-atomiser-nicotine/dp/B01K6HSN96/ref=sr_1_64?keywords=vape+coils&qid=1567369151&s=drugstore&sr=1-64"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-9">
-                <img src="/imgs/vape-coils-page/products/vape-coils-img-9.png" alt="Vape Views top rated Vape Coils">
-                <h3 class="product-desc">Lost Vape Lyra Kit Quest Pod System 1000mah Battery - Coil 0.6</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-coils.html">VAPE COILS</a>
+                <div class="product-9 product-box">
+                    <img src="/imgs/vape-coils-page/products/vape-coils-img-9.png" alt="VapeViews top rated Vape Coils">
+                    <h3 class="product-desc">Lost Vape Lyra Kit Quest Pod System 1000mah Battery - Coil 0.6</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-coils.html">VAPE COILS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Lost-Quest-System-1000mah-Battery/dp/B07VJXYGH1/ref=sr_1_78?keywords=vape+coils&qid=1567369284&s=drugstore&sr=1-78"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Lost-Quest-System-1000mah-Battery/dp/B07VJXYGH1/ref=sr_1_78?keywords=vape+coils&qid=1567369284&s=drugstore&sr=1-78"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-10">
-                <img src="/imgs/vape-coils-page/products/vape-coils-img-10.png" alt="Vape Views top rated Vape Coils">
-                <h3 class="product-desc">5pcs SMOK Vape Pen Mesh Coils 0.15ohm for Smok Vape Pen 22 Kit</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-coils.html">VAPE COILS</a>
+                <div class="product-10 product-box">
+                    <img src="/imgs/vape-coils-page/products/vape-coils-img-10.png"
+                        alt="VapeViews top rated Vape Coils">
+                    <h3 class="product-desc">5pcs SMOK Vape Pen Mesh Coils 0.15ohm for Smok Vape Pen 22 Kit</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-coils.html">VAPE COILS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/5pcs-Coils-0-15ohm-Smok-0-15/dp/B07H6GKYH8/ref=sr_1_82?keywords=vape+coils&qid=1567369473&s=drugstore&sr=1-82"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/5pcs-Coils-0-15ohm-Smok-0-15/dp/B07H6GKYH8/ref=sr_1_82?keywords=vape+coils&qid=1567369473&s=drugstore&sr=1-82"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-11">
-                <img src="/imgs/vape-coils-page/products/vape-coils-img-11.png" alt="Vape Views top rated Vape Coils">
-                <h3 class="product-desc">Vandy Vape Jackaroo Mesh Coil</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-coils.html">VAPE COILS</a>
+                <div class="product-11 product-box">
+                    <img src="/imgs/vape-coils-page/products/vape-coils-img-11.png"
+                        alt="VapeViews top rated Vape Coils">
+                    <h3 class="product-desc">Vandy Vape Jackaroo Mesh Coil</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-coils.html">VAPE COILS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Vandy-Vape-Jackaroo-Mesh-Coil/dp/B07R5PTPV9/ref=sr_1_88?keywords=vape+coils&qid=1567369473&s=drugstore&sr=1-88"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Vandy-Vape-Jackaroo-Mesh-Coil/dp/B07R5PTPV9/ref=sr_1_88?keywords=vape+coils&qid=1567369473&s=drugstore&sr=1-88"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-12">
-                <img src="/imgs/vape-coils-page/products/vape-coils-img-12.png" alt="Vape Views top rated Vape Coils">
-                <h3 class="product-desc">100% Genuine Uwell Crown IV (Uwell Crown 4) Coils with Angelite Vape Band</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-coils.html">VAPE COILS</a>
+                <div class="product-12 product-box">
+                    <img src="/imgs/vape-coils-page/products/vape-coils-img-12.png"
+                        alt="VapeViews top rated Vape Coils">
+                    <h3 class="product-desc">100% Genuine Uwell Crown IV (Uwell Crown 4) Coils with Angelite Vape Band
+                    </h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-coils.html">VAPE COILS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Genuine-Uwell-Crown-Coils-Angelite/dp/B07KFPFQDG/ref=sr_1_95?keywords=vape+coils&qid=1567369473&s=drugstore&sr=1-95"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Genuine-Uwell-Crown-Coils-Angelite/dp/B07KFPFQDG/ref=sr_1_95?keywords=vape+coils&qid=1567369473&s=drugstore&sr=1-95"
-                    target="blank" class="buy-now-btn">Buy Now</a>
             </div>
+        </div>
 
-        </section>
+    </section>
 
-        <!--    /////////////////////////////////////////////////////////////////////
+    <!--    /////////////////////////////////////////////////////////////////////
                                     Contact Section
 ///////////////////////////////////////////////////////////////////////////-->
 
-        <section class="contact-section">
+    <section id="contact-section">
+        <div class="container">
             <h2 class="contact-hdr">Contact Us</h2>
             <div class="map-and-contact-form">
-                <div class="googleMaps">
-                    <img src="/imgs/contact-map.jpg" alt="">
-                </div>
+                <img src="/imgs/contact-map.jpg" alt="" class="googleMaps">
 
                 <div class="contact-form">
                     <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
@@ -361,26 +398,27 @@
 
                         <div class="form-msg">
                             <label for="message">Message:</label>
-                            <textarea name="message" id="message" required>
-                            <?php echo isset($_POST['message']) ? $message : ''; ?>
+                            <textarea name="message" id="message" required>$message : ''; ?>
                         </textarea>
                         </div>
 
-                        <div class="btn form-btn-wrapper">
+                        <div class="btn form-btn">
                             <input type="submit" name="submit" value="Submit">
                         </div>
 
                     </form>
                 </div>
             </div>
+        </div>
 
-        </section>
+    </section>
 
-        <!--    /////////////////////////////////////////////////////////////////////
+    <!--    /////////////////////////////////////////////////////////////////////
                                     Footer Section
 ///////////////////////////////////////////////////////////////////////////-->
 
-        <footer>
+    <footer>
+        <div class="container">
             <div class="footer-top-section">
                 <div class="navigation">
                     <h4>Navigation</h4>
@@ -388,34 +426,49 @@
                         <li><a href="/index.html">Home</a></li>
                         <li><a href="/pages/e-liquids.html">E-Liquids</a></li>
                         <li><a href="/pages/vape-kits.html">Vape Kits</a></li>
-                        <li><a href="/pages/vape-coils.html">VAPE COILS</a></li>
+                        <li><a href="/pages/vape-tanks.html">Vape Tanks</a></li>
                         <li><a href="/pages/vape-coils.html">Vape Coils</a></li>
                         <li><a href="/pages/vape-accessories.html">Vape Accessories</a></li>
                     </ul>
                 </div>
+
                 <div class="age-restriction">
                     <h4>Age Restriction</h4>
                     <p>Vapes and many of their associated products are age restricted. You must be 18+ to make a
                         purchase.
                     </p>
                 </div>
+
                 <div class="affilates">
                     <h4>Affiliates</h4>
                     <p>Though the products we review are linked to the Amazon site, we have no official affiliation with
                         Amazon
                         or their respected products.</p>
                 </div>
+
                 <div class="follows-us">
                     <h4>Follow Us</h4>
-                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
                 </div>
+
+                <div class="newsletter">
+                    <h4>Newsletter</h4>
+                    <div class="search-area-wrapper">
+                        <input type="text" placeholder="Email Address">
+                        <input type="submit" name="submit" value="Sign Up">
+                    </div>
+
+
+
+                </div>
+
             </div>
 
             <div class="footer-btm-section">
-                <a href="/index.html">
+                <a href="/index.html" class="footer-logo">
                     <svg width="81.956" height="43" viewBox="0 0 81.956 43">
                         <defs>
                             <clipPath id="a">
@@ -440,11 +493,10 @@
                     reserved.</p>
 
             </div>
+        </div>
 
-        </footer>
-
-    </div>
-
+    </footer>
+    <script src="/js/mobile-menu.js"></script>
 </body>
 
 </html>

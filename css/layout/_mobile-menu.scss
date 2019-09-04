@@ -1,7 +1,74 @@
-div.hamburger-wrapper {
-    display: none;
-}
+div#mobile-menu {
+    position: fixed;
+    top: -75vh;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 75vh;
+    background-color: $clr-mobile-menu-bg;
+    -webkit-box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.12);
+    z-index: 1000;
+    transition: 0.4s;
 
-div.mobile-menu {
-    display: none;
+    a.mobile-menu-logo {
+        display: block;
+        padding: 2rem 0 0 2rem;
+        border-bottom: solid rgba(189, 189, 189, .05) 1px;
+    }
+
+    div.close-btn-wrapper {
+        position: relative;
+
+        a.close-btn {
+            text-decoration: none;
+            font-size: 5rem;
+            color: #9F9F9F;
+            position: absolute;
+            right: 2rem;
+        }
+    }
+
+    ul.mobile-menu-links {
+        padding-top: 2rem;
+
+        a {
+            display: block;
+            color: #9F9F9F;
+            text-decoration: none;
+            padding: 1rem 0 1rem 2rem;
+            font-size: 1.6rem;
+
+            &.active {
+                color: $clr-accent;
+            }
+        }
+    }
+
+    div.mobile-socials-area {
+        padding: 5rem 0 0 2rem;
+
+        a {
+            width: 3.5rem;
+            height: 3.5rem;
+            background-color: #575757;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: .5rem;
+            text-decoration: none;
+
+            i.fab {
+                color: $clr-accent;
+                font-size: 1.8rem;
+                @include btn-hover;
+
+                &:hover {
+                    color: rgb(126, 174, 58);
+                }
+            }
+        }
+    }
 }

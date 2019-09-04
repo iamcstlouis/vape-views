@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vape Views | Top rated E-Liquids</title>
+    <title>VapeViews | Top rated E-Liquids</title>
     <link rel="stylesheet" href="/css/main.css">
     <script src="https://kit.fontawesome.com/65b5a983fe.js"></script>
 </head>
@@ -17,30 +17,6 @@
 /////////////////////////////////////////////////////////////////////////// -->
 
     <header>
-
-        <!--    /////////////////////////////////////////////////////////////////////
-                                    Hamburger Menu: SVG
-///////////////////////////////////////////////////////////////////////////-->
-
-        <div class="hamburger-wrapper">
-            <div class="hamburger-icon">
-                <a href="#" onclick="openSlideMenu()">
-                    <svg width="34" height="19" viewBox="0 0 34 19">
-                        <defs>
-                            <clipPath id="a">
-                                <rect width="34" height="19" fill="none" />
-                            </clipPath>
-                        </defs>
-                        <g clip-path="url(#a)">
-                            <line x2="34" transform="translate(0 1.5)" fill="none" stroke="#9f9f9f" stroke-width="3" />
-                            <line x2="28" transform="translate(6 9.5)" fill="none" stroke="#9f9f9f" stroke-width="3" />
-                            <line x2="20" transform="translate(14 17.5)" fill="none" stroke="#9f9f9f"
-                                stroke-width="3" />
-                        </g>
-                    </svg>
-                </a>
-            </div>
-        </div>
 
         <!--    /////////////////////////////////////////////////////////////////////
                                     Top Nav
@@ -72,12 +48,36 @@
                     <img src="/imgs/top-nav/stars.png" alt="VapeViews 5 Star Vapes and Vape products">
                 </div>
 
-                <div class="search-area">
-                    <div class="search-bar">
-                        <input type="text" placeholder="Search for products...">
-                    </div>
-                    <div class="search-btn">
-                        <a href="#">Search</a>
+                <div class="mobile-socials-area">
+                    <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <!--    /////////////////////////////////////////////////////////////////////
+                                    Hamburger Menu: SVG
+///////////////////////////////////////////////////////////////////////////-->
+
+                <div class="hamburger-wrapper">
+                    <div class="hamburger-icon">
+                        <a href="#" onclick="openSlideMenu()">
+                            <svg width="34" height="19" viewBox="0 0 34 19">
+                                <defs>
+                                    <clipPath id="a">
+                                        <rect width="34" height="19" fill="none" />
+                                    </clipPath>
+                                </defs>
+                                <g clip-path="url(#a)">
+                                    <line x2="34" transform="translate(0 1.5)" fill="none" stroke="#9f9f9f"
+                                        stroke-width="3" />
+                                    <line x2="28" transform="translate(6 9.5)" fill="none" stroke="#9f9f9f"
+                                        stroke-width="3" />
+                                    <line x2="20" transform="translate(14 17.5)" fill="none" stroke="#9f9f9f"
+                                        stroke-width="3" />
+                                </g>
+                            </svg>
+                        </a>
                     </div>
                 </div>
 
@@ -86,7 +86,7 @@
 
         <div class="top-nav-menu-bar">
             <ul class="top-nav-menu container">
-                <li><a href="/pages/e-liquids.html">E-Liquids</a></li>
+                <li><a href="/pages/e-liquids.html" class="active">E-Liquids</a></li>
                 <li><a href="/pages/vape-kits.html">Vape Kits</a></li>
                 <li><a href="/pages/vape-tanks.html">Tanks</a></li>
                 <li><a href="/pages/vape-coils.html">Coils</a></li>
@@ -97,251 +97,284 @@
         <!--    /////////////////////////////////////////////////////////////////////
                                      Mobile Menu
 ///////////////////////////////////////////////////////////////////////////-->
-        <div class="mobile-menu">
-            <a href="#" class="close-btn" onclick="closeSlideMenu()">&times;</a>
+
+        <div id="mobile-menu">
+            <a href="/index.html" class="mobile-menu-logo">
+                <svg width="81.956" height="43" viewBox="0 0 81.956 43">
+                    <defs>
+                        <clipPath id="a">
+                            <rect width="81.956" height="43" fill="none" />
+                        </clipPath>
+                    </defs>
+                    <g clip-path="url(#a)"><text transform="translate(0 33)" fill="#fff" font-size="36"
+                            font-family="Xirod-Regular, Xirod" letter-spacing="0.1em">
+                            <tspan x="0" y="0">V</tspan>
+                        </text>
+                        <g transform="translate(26.956 11.005)"><text transform="translate(9.841 9)" fill="#8dc63f"
+                                font-size="10" font-family="Xirod-Regular, Xirod" letter-spacing="0.1em">
+                                <tspan x="0" y="0">ape</tspan>
+                            </text><text transform="translate(0 24.408)" fill="#fff" font-size="15"
+                                font-family="Homoarakhn" letter-spacing="0.1em">
+                                <tspan x="0" y="0">iews</tspan>
+                            </text></g>
+                    </g>
+                </svg>
+            </a>
+            <div class="close-btn-wrapper">
+                <a href="#" class="close-btn" onclick="closeSlideMenu()">&times;</a>
+            </div>
             <ul class="mobile-menu-links">
-                <li>Home</li>
-                <li>E-Liquids</li>
-                <li>Vape Kits</li>
-                <li>Tanks</li>
-                <li>Coils</li>
-                <li>Accessories</li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/e-liquids.html" class="active">E-Liquids</a></li>
+                <li><a href="/pages/vape-kits.html">Vape Kits</a></li>
+                <li><a href="/pages/vape-tanks.html">Tanks</a></li>
+                <li><a href="/pages/vape-coils.html">Coils</a></li>
+                <li><a href="/pages/vape-accessories.html">Accessories</a></li>
             </ul>
+
+            <div class="mobile-socials-area">
+                <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
 
     </header>
 
-    <div class="container">
-
-        <!--    /////////////////////////////////////////////////////////////////////
+    <!--    /////////////////////////////////////////////////////////////////////
                                     Main Section
 ///////////////////////////////////////////////////////////////////////////-->
 
-        <section class="e-liquids-hdr-section">
-            <h1 class="e-liquids-hdr">E-Liquids</h1>
-            <p class="e-liquids-sub-hdr">Our top rated E-Liquids</p>
-            <img src="/imgs/page-title-stars.png" alt="Vape Views 5 star E-Liquids">
-            <img src="/imgs/e-liquids-page/e-liquids-top-img.png" alt="Vape Views top rated E-Liquids">
-        </section>
+    <section id="e-liquids-hdr-section" class="container">
+        <h1 class="e-liquids-hdr">E-Liquids</h1>
+        <p class="e-liquids-sub-hdr">Our top rated E-Liquids</p>
+        <img src="/imgs/page-title-stars.png" alt="VapeViews 5 star E-Liquids" class="e-liquids-hdr-stars">
+        <img src="/imgs/e-liquids-page/e-liquids-top-img.png" alt="VapeViews top rated E-Liquids"
+            class="e-liquids-top-img">
+    </section>
 
-        <section class="e-liquids-product-section">
+    <section class="e-liquids-product-section">
 
-            <div class="product-1">
-                <img src="/imgs/e-liquids-page/products/e-liquids-img-1.png" alt="Vape Views top rated E-Liquids">
-                <h3 class="product-desc">Just juice Blood Orange, Citrus & Guava fruit E-Liquid 50ML</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+        <div class="container">
+            <div class="products-wrapper">
+                <div class="product-1 product-box">
+                    <img src="/imgs/e-liquids-page/products/e-liquids-img-1.png" alt="VapeViews top rated E-Liquids">
+                    <h3 class="product-desc">Just juice Blood Orange, Citrus & Guava fruit E-Liquid 50ML</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Just-Juice-Shortfill-Authentic-Nicotine/dp/B07RXZD2GS/ref=sr_1_4?crid=3PMR53B38SR4O&keywords=just+juice+e+liquid&qid=1567211956&s=gateway&sprefix=just+juice%2Caps%2C160&sr=8-4"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Just-Juice-Shortfill-Authentic-Nicotine/dp/B07RXZD2GS/ref=sr_1_4?crid=3PMR53B38SR4O&keywords=just+juice+e+liquid&qid=1567211956&s=gateway&sprefix=just+juice%2Caps%2C160&sr=8-4"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-2">
-                <img src="/imgs/e-liquids-page/products/e-liquids-img-2.png" alt="Vape Views top rated E-Liquids">
-                <h3 class="product-desc">just juice mango and passion fruit E-Liquid 50ML</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                <div class="product-2 product-box">
+                    <img src="/imgs/e-liquids-page/products/e-liquids-img-2.png" alt="VapeViews top rated E-Liquids">
+                    <h3 class="product-desc">just juice mango and passion fruit E-Liquid 50ML</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Just-Juice-Shortfill-Authentic-Nicotine/dp/B07RXWC3M7/ref=sr_1_1?crid=3PMR53B38SR4O&keywords=just+juice+e+liquid&qid=1567212577&s=gateway&sprefix=just+juice%2Caps%2C160&sr=8-1"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Just-Juice-Shortfill-Authentic-Nicotine/dp/B07RXWC3M7/ref=sr_1_1?crid=3PMR53B38SR4O&keywords=just+juice+e+liquid&qid=1567212577&s=gateway&sprefix=just+juice%2Caps%2C160&sr=8-1"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-3">
-                <img src="/imgs/e-liquids-page/products/e-liquids-img-3.png" alt="Vape Views top rated E-Liquids">
-                <h3 class="product-desc">Just juice Berry Burst fruit E-Liquid 50ML</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                <div class="product-3 product-box">
+                    <img src="/imgs/e-liquids-page/products/e-liquids-img-3.png" alt="VapeViews top rated E-Liquids">
+                    <h3 class="product-desc">Just juice Berry Burst fruit E-Liquid 50ML</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Just-Juice-Shortfill-Authentic-Nicotine/dp/B07RXZB5QR/ref=sr_1_2?crid=3PMR53B38SR4O&keywords=just+juice+e+liquid&qid=1567212577&s=gateway&sprefix=just+juice%2Caps%2C160&sr=8-2"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Just-Juice-Shortfill-Authentic-Nicotine/dp/B07RXZB5QR/ref=sr_1_2?crid=3PMR53B38SR4O&keywords=just+juice+e+liquid&qid=1567212577&s=gateway&sprefix=just+juice%2Caps%2C160&sr=8-2"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-4">
-                <img src="/imgs/e-liquids-page/products/e-liquids-img-4.png" alt="Vape Views top rated E-Liquids">
-                <h3 class="product-desc">Just juice Blue Raspberry fruit E-Liquid 50ML</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                <div class="product-4 product-box">
+                    <img src="/imgs/e-liquids-page/products/e-liquids-img-4.png" alt="VapeViews top rated E-Liquids">
+                    <h3 class="product-desc">Just juice Blue Raspberry fruit E-Liquid 50ML</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Just-Juice-Raspberry-Shortfill-Authentic/dp/B07RXWJRR1/ref=sr_1_3?crid=3PMR53B38SR4O&keywords=just+juice+e+liquid&qid=1567212577&s=gateway&sprefix=just+juice%2Caps%2C160&sr=8-3"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Just-Juice-Raspberry-Shortfill-Authentic/dp/B07RXWJRR1/ref=sr_1_3?crid=3PMR53B38SR4O&keywords=just+juice+e+liquid&qid=1567212577&s=gateway&sprefix=just+juice%2Caps%2C160&sr=8-3"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-5">
-                <img src="/imgs/e-liquids-page/products/e-liquids-img-5.png" alt="Vape Views top rated E-Liquids">
-                <h3 class="product-desc">Vaping Bad Pink lemonade E-Liquid 120ML</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                <div class="product-5 product-box">
+                    <img src="/imgs/e-liquids-page/products/e-liquids-img-5.png" alt="VapeViews top rated E-Liquids">
+                    <h3 class="product-desc">Vaping Bad Pink lemonade E-Liquid 120ML</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Vaping-Bad-Premium-Lemonade-Flavour/dp/B07SRF7MP8/ref=sr_1_7?keywords=e-juice&qid=1567213544&s=drugstore&sr=1-7"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Vaping-Bad-Premium-Lemonade-Flavour/dp/B07SRF7MP8/ref=sr_1_7?keywords=e-juice&qid=1567213544&s=drugstore&sr=1-7"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-6">
-                <img src="/imgs/e-liquids-page/products/e-liquids-img-6.png" alt="Vape Views top rated E-Liquids">
-                <h3 class="product-desc">Lucemill Shortfill Premium-Vape Juice- E-Liquid 100ml</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                <div class="product-6 product-box">
+                    <img src="/imgs/e-liquids-page/products/e-liquids-img-6.png" alt="VapeViews top rated E-Liquids">
+                    <h3 class="product-desc">Lucemill Shortfill Premium-Vape Juice- E-Liquid 100ml</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Lucemill-Shortfill-Premium-Vape-Nicotine-Pastilles/dp/B07RMY2J4N/ref=sr_1_1_sspa?keywords=vape+e-liquid&qid=1567215205&s=drugstore&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyRDVDRkExSDNGUFpOJmVuY3J5cHRlZElkPUEwMjMwMDAxMlRGSklFM1lVU1JORiZlbmNyeXB0ZWRBZElkPUEwMDQyMzE1V0k0QjJHM0NSUDExJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Lucemill-Shortfill-Premium-Vape-Nicotine-Pastilles/dp/B07RMY2J4N/ref=sr_1_1_sspa?keywords=vape+e-liquid&qid=1567215205&s=drugstore&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyRDVDRkExSDNGUFpOJmVuY3J5cHRlZElkPUEwMjMwMDAxMlRGSklFM1lVU1JORiZlbmNyeXB0ZWRBZElkPUEwMDQyMzE1V0k0QjJHM0NSUDExJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-7">
-                <img src="/imgs/e-liquids-page/products/e-liquids-img-7.png" alt="Vape Views top rated E-Liquids">
-                <h3 class="product-desc">IMECIG Vape Liquid Fresh Lemon Tear E-Liquid 100ml</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                <div class="product-7 product-box">
+                    <img src="/imgs/e-liquids-page/products/e-liquids-img-7.png" alt="VapeViews top rated E-Liquids">
+                    <h3 class="product-desc">IMECIG Vape Liquid Fresh Lemon Tear E-Liquid 100ml</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/IMECIG-Liquid-Cigarettes-Flavor-Nicotine%EF%BC%89/dp/B07MHVN34M/ref=pd_sbs_121_3/257-9971698-4219521?_encoding=UTF8&pd_rd_i=B07MHVN34M&pd_rd_r=f285d136-9301-46bf-8317-1b411686c89c&pd_rd_w=EWouo&pd_rd_wg=JDJlX&pf_rd_p=15756fbb-4ceb-4379-9d2c-7af36daab01e&pf_rd_r=QD1WB8CDZ88M41ATT873&psc=1&refRID=QD1WB8CDZ88M41ATT873"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/IMECIG-Liquid-Cigarettes-Flavor-Nicotine%EF%BC%89/dp/B07MHVN34M/ref=pd_sbs_121_3/257-9971698-4219521?_encoding=UTF8&pd_rd_i=B07MHVN34M&pd_rd_r=f285d136-9301-46bf-8317-1b411686c89c&pd_rd_w=EWouo&pd_rd_wg=JDJlX&pf_rd_p=15756fbb-4ceb-4379-9d2c-7af36daab01e&pf_rd_r=QD1WB8CDZ88M41ATT873&psc=1&refRID=QD1WB8CDZ88M41ATT873"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-8">
-                <img src="/imgs/e-liquids-page/products/e-liquids-img-8.png" alt="Vape Views top rated E-Liquids">
-                <h3 class="product-desc">IMECIG Strawberry Vape Juice 100ml</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                <div class="product-8 product-box">
+                    <img src="/imgs/e-liquids-page/products/e-liquids-img-8.png" alt="VapeViews top rated E-Liquids">
+                    <h3 class="product-desc">IMECIG Strawberry Vape Juice 100ml</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/IMECIG-Strawberry-Capacity-Cigarettes-Nicotine/dp/B07MBPKD9J/ref=pd_bxgy_121_img_2/257-9971698-4219521?_encoding=UTF8&pd_rd_i=B07MBPKD9J&pd_rd_r=82e06a3f-bd2a-42e8-b13e-172bac7562a6&pd_rd_w=Ynn5Q&pd_rd_wg=QykdH&pf_rd_p=07e3e597-b71b-4701-a3fd-d79c50f48406&pf_rd_r=VHXCG07HWSRQ17JPQ1Z5&psc=1&refRID=VHXCG07HWSRQ17JPQ1Z5"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/IMECIG-Strawberry-Capacity-Cigarettes-Nicotine/dp/B07MBPKD9J/ref=pd_bxgy_121_img_2/257-9971698-4219521?_encoding=UTF8&pd_rd_i=B07MBPKD9J&pd_rd_r=82e06a3f-bd2a-42e8-b13e-172bac7562a6&pd_rd_w=Ynn5Q&pd_rd_wg=QykdH&pf_rd_p=07e3e597-b71b-4701-a3fd-d79c50f48406&pf_rd_r=VHXCG07HWSRQ17JPQ1Z5&psc=1&refRID=VHXCG07HWSRQ17JPQ1Z5"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-9">
-                <img src="/imgs/e-liquids-page/products/e-liquids-img-9.png" alt="Vape Views top rated E-Liquids">
-                <h3 class="product-desc">Double Drip Coil Sauce Raspberry Sherbet, 50ml</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                <div class="product-9 product-box">
+                    <img src="/imgs/e-liquids-page/products/e-liquids-img-9.png" alt="VapeViews top rated E-Liquids">
+                    <h3 class="product-desc">Double Drip Coil Sauce Raspberry Sherbet, 50ml</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Double-Drip-Liquid-Raspberry-Sherbet/dp/B07BN3RCZK/ref=sr_1_8?keywords=vape+e-liquid&qid=1567215967&s=drugstore&sr=1-8"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Double-Drip-Liquid-Raspberry-Sherbet/dp/B07BN3RCZK/ref=sr_1_8?keywords=vape+e-liquid&qid=1567215967&s=drugstore&sr=1-8"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-10">
-                <img src="/imgs/e-liquids-page/products/e-liquids-img-10.png" alt="Vape Views top rated E-Liquids">
-                <h3 class="product-desc">Jack Blacks E Liquid Shisha flavoured 100ml</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                <div class="product-10 product-box">
+                    <img src="/imgs/e-liquids-page/products/e-liquids-img-10.png" alt="VapeViews top rated E-Liquids">
+                    <h3 class="product-desc">Jack Blacks E Liquid Shisha flavoured 100ml</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Liquid-Flavoured-Cigarette-Nicotine-Rodeo/dp/B07BQZSQHP/ref=sr_1_14?keywords=vape+e-liquid&qid=1567215967&s=drugstore&sr=1-14"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Liquid-Flavoured-Cigarette-Nicotine-Rodeo/dp/B07BQZSQHP/ref=sr_1_14?keywords=vape+e-liquid&qid=1567215967&s=drugstore&sr=1-14"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-11">
-                <img src="/imgs/e-liquids-page/products/e-liquids-img-11.png" alt="Vape Views top rated E-Liquids">
-                <h3 class="product-desc">Candy Geek Nerds Bubblegum Flavour 100ml</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                <div class="product-11 product-box">
+                    <img src="/imgs/e-liquids-page/products/e-liquids-img-11.png" alt="VapeViews top rated E-Liquids">
+                    <h3 class="product-desc">Candy Geek Nerds Bubblegum Flavour 100ml</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Candy-Geek-Liquid-Bubblegum-Raspberry/dp/B07FF8ZKDX/ref=pd_sbs_121_2/257-9971698-4219521?_encoding=UTF8&pd_rd_i=B07FF8ZKDX&pd_rd_r=b60f8e05-3619-41b6-a691-067cc9077453&pd_rd_w=QHjGk&pd_rd_wg=l4kvj&pf_rd_p=15756fbb-4ceb-4379-9d2c-7af36daab01e&pf_rd_r=WVGPJBTCMD642ZWFXYKB&psc=1&refRID=WVGPJBTCMD642ZWFXYKB"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Candy-Geek-Liquid-Bubblegum-Raspberry/dp/B07FF8ZKDX/ref=pd_sbs_121_2/257-9971698-4219521?_encoding=UTF8&pd_rd_i=B07FF8ZKDX&pd_rd_r=b60f8e05-3619-41b6-a691-067cc9077453&pd_rd_w=QHjGk&pd_rd_wg=l4kvj&pf_rd_p=15756fbb-4ceb-4379-9d2c-7af36daab01e&pf_rd_r=WVGPJBTCMD642ZWFXYKB&psc=1&refRID=WVGPJBTCMD642ZWFXYKB"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-12">
-                <img src="/imgs/e-liquids-page/products/e-liquids-img-12.png" alt="Vape Views top rated E-Liquids">
-                <h3 class="product-desc">KONCEPTXIX by vampire vape 50ml</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                <div class="product-12 product-box">
+                    <img src="/imgs/e-liquids-page/products/e-liquids-img-12.png" alt="VapeViews top rated E-Liquids">
+                    <h3 class="product-desc">KONCEPTXIX by vampire vape 50ml</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/e-liquids.html">E-LIQUIDS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/KonceptXIX-Vampire-Shortfll-Liquid-Pinkman/dp/B07K7KV5P6/ref=sr_1_20?keywords=vape+e-liquid&qid=1567215967&s=drugstore&sr=1-20"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/KonceptXIX-Vampire-Shortfll-Liquid-Pinkman/dp/B07K7KV5P6/ref=sr_1_20?keywords=vape+e-liquid&qid=1567215967&s=drugstore&sr=1-20"
-                    target="blank" class="buy-now-btn">Buy Now</a>
             </div>
+        </div>
 
-        </section>
+    </section>
 
-        <!--    /////////////////////////////////////////////////////////////////////
+    <!--    /////////////////////////////////////////////////////////////////////
                                     Contact Section
 ///////////////////////////////////////////////////////////////////////////-->
 
-        <section class="contact-section">
+    <section id="contact-section">
+        <div class="container">
             <h2 class="contact-hdr">Contact Us</h2>
             <div class="map-and-contact-form">
-                <div class="googleMaps">
-                    <img src="/imgs/contact-map.jpg" alt="">
-                </div>
+                <img src="/imgs/contact-map.jpg" alt="" class="googleMaps">
 
                 <div class="contact-form">
                     <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
@@ -360,26 +393,27 @@
 
                         <div class="form-msg">
                             <label for="message">Message:</label>
-                            <textarea name="message" id="message" required>
-                            <?php echo isset($_POST['message']) ? $message : ''; ?>
+                            <textarea name="message" id="message" required>$message : ''; ?>
                         </textarea>
                         </div>
 
-                        <div class="btn form-btn-wrapper">
+                        <div class="btn form-btn">
                             <input type="submit" name="submit" value="Submit">
                         </div>
 
                     </form>
                 </div>
             </div>
+        </div>
 
-        </section>
+    </section>
 
-        <!--    /////////////////////////////////////////////////////////////////////
+    <!--    /////////////////////////////////////////////////////////////////////
                                     Footer Section
 ///////////////////////////////////////////////////////////////////////////-->
 
-        <footer>
+    <footer>
+        <div class="container">
             <div class="footer-top-section">
                 <div class="navigation">
                     <h4>Navigation</h4>
@@ -392,29 +426,44 @@
                         <li><a href="/pages/vape-accessories.html">Vape Accessories</a></li>
                     </ul>
                 </div>
+
                 <div class="age-restriction">
                     <h4>Age Restriction</h4>
                     <p>Vapes and many of their associated products are age restricted. You must be 18+ to make a
                         purchase.
                     </p>
                 </div>
+
                 <div class="affilates">
                     <h4>Affiliates</h4>
                     <p>Though the products we review are linked to the Amazon site, we have no official affiliation with
                         Amazon
                         or their respected products.</p>
                 </div>
+
                 <div class="follows-us">
                     <h4>Follow Us</h4>
-                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
                 </div>
+
+                <div class="newsletter">
+                    <h4>Newsletter</h4>
+                    <div class="search-area-wrapper">
+                        <input type="text" placeholder="Email Address">
+                        <input type="submit" name="submit" value="Sign Up">
+                    </div>
+
+
+
+                </div>
+
             </div>
 
             <div class="footer-btm-section">
-                <a href="/index.html">
+                <a href="/index.html" class="footer-logo">
                     <svg width="81.956" height="43" viewBox="0 0 81.956 43">
                         <defs>
                             <clipPath id="a">
@@ -439,10 +488,10 @@
                     reserved.</p>
 
             </div>
+        </div>
 
-        </footer>
-    </div>
-
+    </footer>
+    <script src="/js/mobile-menu.js"></script>
 </body>
 
 </html>

@@ -1,18 +1,25 @@
 header {
 
-    .nicotine-warning {
+    div.nicotine-warning {
         background-color: $clr-homepage-warning-bg;
         color: #F7FBFC;
         height: 5.4rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 2rem 0;
+
+        p.nicotine-warning-txt {
+            text-align: center;
+            width: 100%;
+        }
+
     }
 }
 
 // ******** Homepage Section ********
 
-#homepage-section {
+section#homepage-section {
     padding-top: 27vh;
 
     h1.homepage-hdr {
@@ -22,36 +29,37 @@ header {
         text-align: center;
     }
 
-    .homepage-sub-hdr {
+    p.homepage-sub-hdr {
         color: $clr-accent;
         font-size: 3.3rem;
         font-weight: 300;
         text-align: center;
     }
 
-    .homepage-content {
+    div.homepage-content {
         display: flex;
         margin-top: 4rem;
 
-        .homepage-left-side {
+        div.homepage-left-side {
+            width: 40%;
 
-            .homepage-intro-txt-sub-hdr {
+            h2.homepage-intro-txt-sub-hdr {
                 font-size: 3.4rem;
                 color: $clr-section-hdr-dark;
                 font-weight: 900;
-                margin-top: 12rem;
+                margin-top: 10rem;
             }
 
             img {
                 margin-top: 1rem;
             }
 
-            .homepage-intro-txt {
+            p.homepage-intro-txt {
                 margin-top: 2rem;
                 line-height: 1.5;
             }
 
-            .homepage-btn {
+            button.homepage-btn {
                 margin-top: 3.6rem;
                 background-color: #333333;
                 border-radius: .3rem;
@@ -72,25 +80,24 @@ header {
             }
         }
 
-        // div.homepage-right-side {
-        //     width: 100%;
+        div.homepage-right-side {
+            width: 60%;
 
-        //     img {
-        //         width: 100%;
-        //     }
-        // }
-
+            img.homepage-main-image {
+                display: block;
+            }
+        }
     }
 }
 
 // ******** About Section ********
 
-#about-section {
+section#about-section {
     background-color: $clr-about-bg;
     padding: 8.8rem 0;
     margin-top: 8rem;
 
-    .about-hdr {
+    h2.about-hdr {
         font-size: 4.5rem;
         font-weight: 700;
         color: $clr-page-hdr-grey;
@@ -106,8 +113,8 @@ header {
         margin: 1rem auto;
     }
 
-    .about-paragraph-1,
-    .about-paragraph-2 {
+    p.about-paragraph-1,
+    p.about-paragraph-2 {
         font-size: 1.6rem;
         font-weight: 400;
         color: $clr-main-txt;
@@ -134,7 +141,7 @@ header {
         }
     }
 
-    .about-btn {
+    button.about-btn {
         margin: 3.6rem auto;
         background-color: $clr-accent;
         border-radius: .3rem;
@@ -160,28 +167,20 @@ header {
 
 // ******** Top Picks Section ********
 
-#top-picks-section {
-    background-image: url('/imgs/top-picks-section/compressed/top-picks-bg.jpg');
+section#top-picks-section {
+    background-image: url('/imgs/top-picks-section/top-picks-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 10rem 0;
-    display: flex;
 
-    .top-picks-hdr {
+    h2.top-picks-hdr {
         font-size: 4.5rem;
         font-weight: 700;
         color: $clr-section-hdr-dark;
         text-align: center;
-        padding-bottom: 1rem;
+        padding-bottom: 7rem;
         width: 80%;
         margin: 0 auto;
-    }
-
-    .top-picks-products-section {
-        margin-top: 8rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 }

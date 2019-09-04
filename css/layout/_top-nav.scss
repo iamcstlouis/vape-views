@@ -7,10 +7,11 @@ header {
         background-color: $clr-top-nav-bg-dark;
 
         div.top-nav-logo-bar-wrapper {
-            width: 85vw;
+            width: 90vw;
+            max-width: 140rem;
             margin: 0 auto;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
 
             div.top-nav-logo-and-stars {
@@ -22,67 +23,75 @@ header {
                 }
             }
 
-            div.search-area {
-                display: flex;
+            div.mobile-socials-area {
+                margin-left: auto;
 
-                div.search-bar {
-                    width: 47.4rem;
-                    height: 3.2rem;
-                    display: flex;
+                a {
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    background-color: #575757;
+                    display: inline-flex;
                     align-items: center;
-                    padding: 1rem;
-                    border: solid #F5F5F5 1px;
-                    border-radius: .5rem 0 0 .5rem;
+                    justify-content: center;
+                    border-radius: 50%;
+                    margin-right: .5rem;
+                    text-decoration: none;
 
-                    input {
-                        background-color: $clr-top-nav-bg-dark;
-                        border: none;
-                        color: #767676;
-                        font-size: 1.4rem;
-                        outline: none;
-                    }
-                }
+                    i.fab {
+                        color: $clr-accent;
+                        font-size: 1.8rem;
+                        @include btn-hover;
 
-                div.search-btn {
-                    display: flex;
-                    align-items: center;
-                    background-color: $clr-accent;
-                    border-radius: 0 .5rem .5rem 0;
-
-                    a {
-                        text-decoration: none;
-                        color: #F5F5F5;
-                        padding: 0 4rem;
+                        &:hover {
+                            color: rgb(126, 174, 58);
+                        }
                     }
                 }
             }
+
+            div.hamburger-wrapper {
+                display: none;
+            }
         }
     }
+}
 
-    div.top-nav-menu-bar {
-        background-color: $clr-top-nav-bg-light;
-        height: 5.4rem;
+div.top-nav-menu-bar {
+    background-color: $clr-top-nav-bg-light;
+    height: 5.4rem;
+    display: flex;
+    align-items: center;
+    -webkit-box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.12);
+
+    ul.top-nav-menu {
         display: flex;
         align-items: center;
-        -webkit-box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.12);
-        -moz-box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.12);
-        box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.12);
+        justify-content: center;
+        width: 100%;
 
-        ul.top-nav-menu {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        li {
+            margin: 0 1rem;
 
+            a {
+                text-decoration: none;
+                color: $clr-main-txt;
+                font-size: 1.6rem;
+                text-transform: uppercase;
+                padding: 1rem 1.5rem;
+                @include top-nav-btn-hover;
 
-            li {
-                margin: 0 1rem;
-
-                a {
-                    text-decoration: none;
+                &:visited {
                     color: $clr-main-txt;
-                    font-size: 1.6rem;
-                    text-transform: uppercase;
-                    padding: 1rem 1.5rem;
+                }
+
+                &:hover {
+                    color: $clr-accent;
+                }
+
+                &.active {
+                    color: $clr-accent;
                 }
             }
         }

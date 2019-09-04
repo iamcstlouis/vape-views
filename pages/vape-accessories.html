@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vape Views | Top rated Vape Accessories</title>
+    <title>VapeViews | Top rated Vape Accessories</title>
     <link rel="stylesheet" href="/css/main.css">
     <script src="https://kit.fontawesome.com/65b5a983fe.js"></script>
 </head>
@@ -17,30 +17,6 @@
 /////////////////////////////////////////////////////////////////////////// -->
 
     <header>
-
-        <!--    /////////////////////////////////////////////////////////////////////
-                                    Hamburger Menu: SVG
-///////////////////////////////////////////////////////////////////////////-->
-
-        <div class="hamburger-wrapper">
-            <div class="hamburger-icon">
-                <a href="#" onclick="openSlideMenu()">
-                    <svg width="34" height="19" viewBox="0 0 34 19">
-                        <defs>
-                            <clipPath id="a">
-                                <rect width="34" height="19" fill="none" />
-                            </clipPath>
-                        </defs>
-                        <g clip-path="url(#a)">
-                            <line x2="34" transform="translate(0 1.5)" fill="none" stroke="#9f9f9f" stroke-width="3" />
-                            <line x2="28" transform="translate(6 9.5)" fill="none" stroke="#9f9f9f" stroke-width="3" />
-                            <line x2="20" transform="translate(14 17.5)" fill="none" stroke="#9f9f9f"
-                                stroke-width="3" />
-                        </g>
-                    </svg>
-                </a>
-            </div>
-        </div>
 
         <!--    /////////////////////////////////////////////////////////////////////
                                     Top Nav
@@ -72,15 +48,38 @@
                     <img src="/imgs/top-nav/stars.png" alt="VapeViews 5 Star Vapes and Vape products">
                 </div>
 
-                <div class="search-area">
-                    <div class="search-bar">
-                        Search for products...
-                    </div>
-                    <div class="search-btn">
-                        Search
-                    </div>
+                <div class="mobile-socials-area">
+                    <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
                 </div>
 
+                <!--    /////////////////////////////////////////////////////////////////////
+                                    Hamburger Menu: SVG
+///////////////////////////////////////////////////////////////////////////-->
+
+                <div class="hamburger-wrapper">
+                    <div class="hamburger-icon">
+                        <a href="#" onclick="openSlideMenu()">
+                            <svg width="34" height="19" viewBox="0 0 34 19">
+                                <defs>
+                                    <clipPath id="a">
+                                        <rect width="34" height="19" fill="none" />
+                                    </clipPath>
+                                </defs>
+                                <g clip-path="url(#a)">
+                                    <line x2="34" transform="translate(0 1.5)" fill="none" stroke="#9f9f9f"
+                                        stroke-width="3" />
+                                    <line x2="28" transform="translate(6 9.5)" fill="none" stroke="#9f9f9f"
+                                        stroke-width="3" />
+                                    <line x2="20" transform="translate(14 17.5)" fill="none" stroke="#9f9f9f"
+                                        stroke-width="3" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -90,274 +89,309 @@
                 <li><a href="/pages/vape-kits.html">Vape Kits</a></li>
                 <li><a href="/pages/vape-tanks.html">Tanks</a></li>
                 <li><a href="/pages/vape-coils.html">Coils</a></li>
-                <li><a href="/pages/vape-accessories.html">Accessories</a></li>
+                <li><a href="/pages/vape-accessories.html" class="active">Accessories</a></li>
             </ul>
         </div>
 
         <!--    /////////////////////////////////////////////////////////////////////
                                      Mobile Menu
 ///////////////////////////////////////////////////////////////////////////-->
-        <div class="mobile-menu">
-            <a href="#" class="close-btn" onclick="closeSlideMenu()">&times;</a>
+
+        <div id="mobile-menu">
+            <a href="/index.html" class="mobile-menu-logo">
+                <svg width="81.956" height="43" viewBox="0 0 81.956 43">
+                    <defs>
+                        <clipPath id="a">
+                            <rect width="81.956" height="43" fill="none" />
+                        </clipPath>
+                    </defs>
+                    <g clip-path="url(#a)"><text transform="translate(0 33)" fill="#fff" font-size="36"
+                            font-family="Xirod-Regular, Xirod" letter-spacing="0.1em">
+                            <tspan x="0" y="0">V</tspan>
+                        </text>
+                        <g transform="translate(26.956 11.005)"><text transform="translate(9.841 9)" fill="#8dc63f"
+                                font-size="10" font-family="Xirod-Regular, Xirod" letter-spacing="0.1em">
+                                <tspan x="0" y="0">ape</tspan>
+                            </text><text transform="translate(0 24.408)" fill="#fff" font-size="15"
+                                font-family="Homoarakhn" letter-spacing="0.1em">
+                                <tspan x="0" y="0">iews</tspan>
+                            </text></g>
+                    </g>
+                </svg>
+            </a>
+            <div class="close-btn-wrapper">
+                <a href="#" class="close-btn" onclick="closeSlideMenu()">&times;</a>
+            </div>
             <ul class="mobile-menu-links">
-                <li>Home</li>
-                <li>E-Liquids</li>
-                <li>Vape Kits</li>
-                <li>Tanks</li>
-                <li>Coils</li>
-                <li>Accessories</li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/e-liquids.html">E-Liquids</a></li>
+                <li><a href="/pages/vape-kits.html">Vape Kits</a></li>
+                <li><a href="/pages/vape-tanks.html">Tanks</a></li>
+                <li><a href="/pages/vape-coils.html">Coils</a></li>
+                <li><a href="/pages/vape-accessories.html" class="active">Accessories</a></li>
             </ul>
+
+            <div class="mobile-socials-area">
+                <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
 
     </header>
 
-    <div class="container">
-
-        <!--    /////////////////////////////////////////////////////////////////////
+    <!--    /////////////////////////////////////////////////////////////////////
                                     Main Section
 ///////////////////////////////////////////////////////////////////////////-->
 
-        <section class="vape-accessories-hdr-section">
-            <h1 class="vape-accessories-hdr">Vape Accessories</h1>
-            <p class="vape-accessories-sub-hdr">Our top rated Vape accessories</p>
-            <img src="/imgs/page-title-stars.png" alt="Vape Views 5 star Vape Accessories">
-            <img src="/imgs/vape-accessories-page/vape-accessories-top-image.png"
-                alt="Vape Views top rated Vape Accessories">
-        </section>
+    <section id="vape-accessories-hdr-section" class="container">
+        <h1 class="vape-accessories-hdr">Vape Accessories</h1>
+        <p class="vape-accessories-sub-hdr">Our top rated Vape accessories</p>
+        <img src="/imgs/page-title-stars.png" alt="VapeViews 5 star Vape Accessories"
+            class="vape-accessories-hdr-stars">
+        <img src="/imgs/vape-accessories-page/vape-accessories-top-image.png" alt="VapeViews top rated Vape Accessories"
+            class="vape-accessories-top-img">
+    </section>
 
-        <section class="vape-accessories-product-section">
+    <section class="vape-accessories-product-section">
 
-            <div class="product-1">
-                <img src="/imgs/vape-accessories-page/products/vape-accessories-img-1.png"
-                    alt="Vape Views top rated Vape Accessories">
-                <h3 class="product-desc">Vaportown Vape Case Pouch Holder Travel Organizer Carrying Bag</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+        <div class="container">
+            <div class="products-wrapper">
+                <div class="product-1 product-box">
+                    <img src="/imgs/vape-accessories-page/products/vape-accessories-img-1.png"
+                        alt="VapeViews top rated Vape Accessories">
+                    <h3 class="product-desc">Vaportown Vape Case Pouch Holder Travel Organizer Carrying Bag</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Vaportown-Accessories-Carrying-Supplies-Organizing/dp/B07BY6YLGL/ref=sr_1_5?keywords=vape+accessories&qid=1567369869&s=drugstore&sr=1-5"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Vaportown-Accessories-Carrying-Supplies-Organizing/dp/B07BY6YLGL/ref=sr_1_5?keywords=vape+accessories&qid=1567369869&s=drugstore&sr=1-5"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-2">
-                <img src="/imgs/vape-accessories-page/products/vape-accessories-img-2.png"
-                    alt="Vape Views top rated Vape Accessories">
-                <h3 class="product-desc">VertVape the Universal Vape Holder</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                <div class="product-2 product-box">
+                    <img src="/imgs/vape-accessories-page/products/vape-accessories-img-2.png"
+                        alt="VapeViews top rated Vape Accessories">
+                    <h3 class="product-desc">VertVape the Universal Vape Holder</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/VertVape-the-Universal-Vape-Holder/dp/B078QHQBLY/ref=sr_1_6?keywords=vape+accessories&qid=1567370052&s=drugstore&sr=1-6"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/VertVape-the-Universal-Vape-Holder/dp/B078QHQBLY/ref=sr_1_6?keywords=vape+accessories&qid=1567370052&s=drugstore&sr=1-6"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-3">
-                <img src="/imgs/vape-accessories-page/products/vape-accessories-img-3.png"
-                    alt="Vape Views top rated Vape Accessories">
-                <h3 class="product-desc">Wolfteeth Huge Capacity Vape Bag Travel Portable Case</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                <div class="product-3 product-box">
+                    <img src="/imgs/vape-accessories-page/products/vape-accessories-img-3.png"
+                        alt="VapeViews top rated Vape Accessories">
+                    <h3 class="product-desc">Wolfteeth Huge Capacity Vape Bag Travel Portable Case</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Wolfteeth-Capacity-Electronics-Accessories-Especially/dp/B07F9NBRX2/ref=sr_1_7?keywords=vape+accessories&qid=1567370052&s=drugstore&sr=1-7"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Wolfteeth-Capacity-Electronics-Accessories-Especially/dp/B07F9NBRX2/ref=sr_1_7?keywords=vape+accessories&qid=1567370052&s=drugstore&sr=1-7"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-4">
-                <img src="/imgs/vape-accessories-page/products/vape-accessories-img-4.png"
-                    alt="Vape Views top rated Vape Accessories">
-                <h3 class="product-desc">Drip Tip Snakeskin Epoxy Resin 810 Mouthpiece for TFV12 Atomizer RDA RTA Tank
-                </h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                <div class="product-4 product-box">
+                    <img src="/imgs/vape-accessories-page/products/vape-accessories-img-4.png"
+                        alt="VapeViews top rated Vape Accessories">
+                    <h3 class="product-desc">Drip Tip Snakeskin Epoxy Resin 810 Mouthpiece for TFV12 Atomizer RDA RTA
+                        Tank
+                    </h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Snakeskin-Mouthpiece-Atomizer-Cigarettes-Accessories/dp/B07L87DQK7/ref=sr_1_8?keywords=vape+accessories&qid=1567370052&s=drugstore&sr=1-8"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Snakeskin-Mouthpiece-Atomizer-Cigarettes-Accessories/dp/B07L87DQK7/ref=sr_1_8?keywords=vape+accessories&qid=1567370052&s=drugstore&sr=1-8"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-5">
-                <img src="/imgs/vape-accessories-page/products/vape-accessories-img-5.png"
-                    alt="Vape Views top rated Vape Accessories">
-                <h3 class="product-desc">Storz & Bickel MIGHTY</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                <div class="product-5 product-box">
+                    <img src="/imgs/vape-accessories-page/products/vape-accessories-img-5.png"
+                        alt="VapeViews top rated Vape Accessories">
+                    <h3 class="product-desc">Storz & Bickel MIGHTY</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Storz-Bickel-Mighty-MIGHTY/dp/B00P2K1UQ6/ref=sr_1_9?keywords=vape+accessories&qid=1567370052&s=drugstore&sr=1-9"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Storz-Bickel-Mighty-MIGHTY/dp/B00P2K1UQ6/ref=sr_1_9?keywords=vape+accessories&qid=1567370052&s=drugstore&sr=1-9"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-6">
-                <img src="/imgs/vape-accessories-page/products/vape-accessories-img-6.png"
-                    alt="Vape Views top rated Vape Accessories">
-                <h3 class="product-desc">vape stands vape display New vape stand</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                <div class="product-6 product-box">
+                    <img src="/imgs/vape-accessories-page/products/vape-accessories-img-6.png"
+                        alt="VapeViews top rated Vape Accessories">
+                    <h3 class="product-desc">vape stands vape display New vape stand</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/vape-stands-display-stand-Acrylic/dp/B074W4ZCKW/ref=sr_1_11?keywords=vape+accessories&qid=1567370052&s=drugstore&sr=1-11"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/vape-stands-display-stand-Acrylic/dp/B074W4ZCKW/ref=sr_1_11?keywords=vape+accessories&qid=1567370052&s=drugstore&sr=1-11"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-7">
-                <img src="/imgs/vape-accessories-page/products/vape-accessories-img-7.png"
-                    alt="Vape Views top rated Vape Accessories">
-                <h3 class="product-desc">EGO E CIG LANYARD CASE HOLDER - Soft Lined + Black faux leather</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/e-liquids.html">VAPE KITS</a>
+                <div class="product-7 product-box">
+                    <img src="/imgs/vape-accessories-page/products/vape-accessories-img-7.png"
+                        alt="VapeViews top rated Vape Accessories">
+                    <h3 class="product-desc">EGO E CIG LANYARD CASE HOLDER - Soft Lined + Black faux leather</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/e-liquids.html">VAPE KITS</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/EGO-CIG-LANYARD-CASE-HOLDER/dp/B00I8MUXHW/ref=sr_1_13?keywords=vape+accessories&qid=1567370052&s=drugstore&sr=1-13"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/EGO-CIG-LANYARD-CASE-HOLDER/dp/B00I8MUXHW/ref=sr_1_13?keywords=vape+accessories&qid=1567370052&s=drugstore&sr=1-13"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-8">
-                <img src="/imgs/vape-accessories-page/products/vape-accessories-img-8.png"
-                    alt="Vape Views top rated Vape Accessories">
-                <h3 class="product-desc">Rotating Stainless Steel 510 Drip Tip For Electronic Cigarettes And Vaping
-                    Devices</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                <div class="product-8 product-box">
+                    <img src="/imgs/vape-accessories-page/products/vape-accessories-img-8.png"
+                        alt="VapeViews top rated Vape Accessories">
+                    <h3 class="product-desc">Rotating Stainless Steel 510 Drip Tip For Electronic Cigarettes And Vaping
+                        Devices</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Stainless-Drip-Tip-Electronic-Cigarettes/dp/B00UCKU54O/ref=sr_1_18?keywords=vape+accessories&qid=1567370986&s=drugstore&sr=1-18"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Stainless-Drip-Tip-Electronic-Cigarettes/dp/B00UCKU54O/ref=sr_1_18?keywords=vape+accessories&qid=1567370986&s=drugstore&sr=1-18"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-9">
-                <img src="/imgs/vape-accessories-page/products/vape-accessories-img-9.png"
-                    alt="Vape Views top rated Vape Accessories">
-                <h3 class="product-desc">Aspire POCKEX Accessories GLASS TUBE | DRIP TIP | SEAL GASKET | RETAINING BASE
-                </h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                <div class="product-9 product-box">
+                    <img src="/imgs/vape-accessories-page/products/vape-accessories-img-9.png"
+                        alt="VapeViews top rated Vape Accessories">
+                    <h3 class="product-desc">Aspire POCKEX Accessories GLASS TUBE | DRIP TIP | SEAL GASKET | RETAINING
+                        BASE
+                    </h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Accessories-RETAINING-multiple-separately-nicotine/dp/B074N4WTND/ref=sr_1_21?keywords=vape+accessories&qid=1567370986&s=drugstore&sr=1-21"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Accessories-RETAINING-multiple-separately-nicotine/dp/B074N4WTND/ref=sr_1_21?keywords=vape+accessories&qid=1567370986&s=drugstore&sr=1-21"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-10">
-                <img src="/imgs/vape-accessories-page/products/vape-accessories-img-10.png"
-                    alt="Vape Views top rated Vape Accessories">
-                <h3 class="product-desc">HR-Grip E-Cigarette Holder for Airvent Slats</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                <div class="product-10 product-box">
+                    <img src="/imgs/vape-accessories-page/products/vape-accessories-img-10.png"
+                        alt="VapeViews top rated Vape Accessories">
+                    <h3 class="product-desc">HR-Grip E-Cigarette Holder for Airvent Slats</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/HR-Grip-Cigarette-Holder-Airvent-Slats-Black/dp/B07BVZDZR8/ref=sr_1_23?keywords=vape+accessories&qid=1567370986&s=drugstore&sr=1-23"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/HR-Grip-Cigarette-Holder-Airvent-Slats-Black/dp/B07BVZDZR8/ref=sr_1_23?keywords=vape+accessories&qid=1567370986&s=drugstore&sr=1-23"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-11">
-                <img src="/imgs/vape-accessories-page/products/vape-accessories-img-11.png"
-                    alt="Vape Views top rated Vape Accessories">
-                <h3 class="product-desc">Aluminum Base Stand Holder for 510 Thread Vape Tank Electronic</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                <div class="product-11 product-box">
+                    <img src="/imgs/vape-accessories-page/products/vape-accessories-img-11.png"
+                        alt="VapeViews top rated Vape Accessories">
+                    <h3 class="product-desc">Aluminum Base Stand Holder for 510 Thread Vape Tank Electronic</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Aluminum-Holder-Electronic-Cigarette-Accessories/dp/B07JMJZD2D/ref=sr_1_26?keywords=vape+accessories&qid=1567370986&s=drugstore&sr=1-26"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Aluminum-Holder-Electronic-Cigarette-Accessories/dp/B07JMJZD2D/ref=sr_1_26?keywords=vape+accessories&qid=1567370986&s=drugstore&sr=1-26"
-                    target="blank" class="buy-now-btn">Buy Now</a>
-            </div>
 
-            <div class="product-12">
-                <img src="/imgs/vape-accessories-page/products/vape-accessories-img-12.png"
-                    alt="Vape Views top rated Vape Accessories">
-                <h3 class="product-desc">Plan B Vape Pen Carrying case Myblu LYS – Cord 100 cm</h3>
-                <div class="product-category-and-rating">
-                    <div class="product-category">
-                        <p>Product Category:</p>
-                        <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                <div class="product-12 product-box">
+                    <img src="/imgs/vape-accessories-page/products/vape-accessories-img-12.png"
+                        alt="VapeViews top rated Vape Accessories">
+                    <h3 class="product-desc">Plan B Vape Pen Carrying case Myblu LYS – Cord 100 cm</h3>
+                    <div class="product-category-and-rating">
+                        <div class="product-category">
+                            <p>Product Category:</p>
+                            <a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a>
+                        </div>
+                        <div class="product-rating">
+                            <p>Product Rating:</p>
+                            <img src="/imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
+                        </div>
                     </div>
-                    <div class="product-rating">
-                        <p>Product Rating:</p>
-                        <img src="/imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
-                    </div>
+                    <a href="https://www.amazon.co.uk/Plan-Vape-Carrying-Myblu-Multicolored/dp/B07PDNKLL3/ref=sr_1_28?keywords=vape+accessories&qid=1567370986&s=drugstore&sr=1-28"
+                        target="blank" class="buy-now-btn">Buy Now</a>
                 </div>
-                <a href="https://www.amazon.co.uk/Plan-Vape-Carrying-Myblu-Multicolored/dp/B07PDNKLL3/ref=sr_1_28?keywords=vape+accessories&qid=1567370986&s=drugstore&sr=1-28"
-                    target="blank" class="buy-now-btn">Buy Now</a>
             </div>
+        </div>
 
-        </section>
+    </section>
 
-        <!--    /////////////////////////////////////////////////////////////////////
+    <!--    /////////////////////////////////////////////////////////////////////
                                     Contact Section
 ///////////////////////////////////////////////////////////////////////////-->
 
-        <section class="contact-section">
+    <section id="contact-section">
+        <div class="container">
             <h2 class="contact-hdr">Contact Us</h2>
             <div class="map-and-contact-form">
-                <div class="googleMaps">
-                    <img src="/imgs/contact-map.jpg" alt="">
-                </div>
+                <img src="/imgs/contact-map.jpg" alt="" class="googleMaps">
 
                 <div class="contact-form">
                     <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
@@ -376,26 +410,27 @@
 
                         <div class="form-msg">
                             <label for="message">Message:</label>
-                            <textarea name="message" id="message" required>
-                            <?php echo isset($_POST['message']) ? $message : ''; ?>
+                            <textarea name="message" id="message" required>$message : ''; ?>
                         </textarea>
                         </div>
 
-                        <div class="btn form-btn-wrapper">
+                        <div class="btn form-btn">
                             <input type="submit" name="submit" value="Submit">
                         </div>
 
                     </form>
                 </div>
             </div>
+        </div>
 
-        </section>
+    </section>
 
-        <!--    /////////////////////////////////////////////////////////////////////
+    <!--    /////////////////////////////////////////////////////////////////////
                                     Footer Section
 ///////////////////////////////////////////////////////////////////////////-->
 
-        <footer>
+    <footer>
+        <div class="container">
             <div class="footer-top-section">
                 <div class="navigation">
                     <h4>Navigation</h4>
@@ -404,33 +439,48 @@
                         <li><a href="/pages/e-liquids.html">E-Liquids</a></li>
                         <li><a href="/pages/vape-kits.html">Vape Kits</a></li>
                         <li><a href="/pages/vape-tanks.html">Vape Tanks</a></li>
-                        <li><a href="/pages/vape-accessories.html">VAPE ACCESSORIES</a></li>
+                        <li><a href="/pages/vape-coils.html">Vape Coils</a></li>
                         <li><a href="/pages/vape-accessories.html">Vape Accessories</a></li>
                     </ul>
                 </div>
+
                 <div class="age-restriction">
                     <h4>Age Restriction</h4>
                     <p>Vapes and many of their associated products are age restricted. You must be 18+ to make a
                         purchase.
                     </p>
                 </div>
+
                 <div class="affilates">
                     <h4>Affiliates</h4>
                     <p>Though the products we review are linked to the Amazon site, we have no official affiliation with
                         Amazon
                         or their respected products.</p>
                 </div>
+
                 <div class="follows-us">
                     <h4>Follow Us</h4>
-                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
                 </div>
+
+                <div class="newsletter">
+                    <h4>Newsletter</h4>
+                    <div class="search-area-wrapper">
+                        <input type="text" placeholder="Email Address">
+                        <input type="submit" name="submit" value="Sign Up">
+                    </div>
+
+
+
+                </div>
+
             </div>
 
             <div class="footer-btm-section">
-                <a href="/index.html">
+                <a href="/index.html" class="footer-logo">
                     <svg width="81.956" height="43" viewBox="0 0 81.956 43">
                         <defs>
                             <clipPath id="a">
@@ -455,11 +505,10 @@
                     reserved.</p>
 
             </div>
+        </div>
 
-        </footer>
-
-    </div>
-
+    </footer>
+    <script src="/js/mobile-menu.js"></script>
 </body>
 
 </html>

@@ -131,8 +131,13 @@ table {
           box-sizing: border-box;
 }
 
+section {
+  outline: none;
+}
+
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
@@ -140,11 +145,18 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   line-height: 1.2;
+  height: 100%;
 }
 
 .container {
-  width: 120rem;
+  max-width: 120rem;
   margin: 0 auto;
+  padding: 0 2rem;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
 }
 
 header {
@@ -157,14 +169,15 @@ header div.top-nav-logo-bar {
 }
 
 header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper {
-  width: 85vw;
+  width: 90vw;
+  max-width: 140rem;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -183,52 +196,44 @@ header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.top-nav-logo-and-st
   padding-left: 3rem;
 }
 
-header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.search-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.mobile-socials-area {
+  margin-left: auto;
 }
 
-header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.search-area div.search-bar {
-  width: 47.4rem;
-  height: 3.2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.mobile-socials-area a {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #575757;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
-  border: solid #F5F5F5 1px;
-  border-radius: .5rem 0 0 .5rem;
-}
-
-header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.search-area div.search-bar input {
-  background-color: #333333;
-  border: none;
-  color: #767676;
-  font-size: 1.4rem;
-  outline: none;
-}
-
-header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.search-area div.search-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #8DC63F;
-  border-radius: 0 .5rem .5rem 0;
-}
-
-header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.search-area div.search-btn a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: .5rem;
   text-decoration: none;
-  color: #F5F5F5;
-  padding: 0 4rem;
 }
 
-header div.top-nav-menu-bar {
+header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.mobile-socials-area a i.fab {
+  color: #8DC63F;
+  font-size: 1.8rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.mobile-socials-area a i.fab:hover {
+  color: #7eae3a;
+}
+
+header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.hamburger-wrapper {
+  display: none;
+}
+
+div.top-nav-menu-bar {
   background-color: #F5F5F5;
   height: 5.4rem;
   display: -webkit-box;
@@ -241,7 +246,7 @@ header div.top-nav-menu-bar {
   box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.12);
 }
 
-header div.top-nav-menu-bar ul.top-nav-menu {
+div.top-nav-menu-bar ul.top-nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,30 +256,130 @@ header div.top-nav-menu-bar ul.top-nav-menu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
-header div.top-nav-menu-bar ul.top-nav-menu li {
+div.top-nav-menu-bar ul.top-nav-menu li {
   margin: 0 1rem;
 }
 
-header div.top-nav-menu-bar ul.top-nav-menu li a {
+div.top-nav-menu-bar ul.top-nav-menu li a {
   text-decoration: none;
   color: #575757;
   font-size: 1.6rem;
   text-transform: uppercase;
   padding: 1rem 1.5rem;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
-div.hamburger-wrapper {
-  display: none;
+div.top-nav-menu-bar ul.top-nav-menu li a:visited {
+  color: #575757;
 }
 
-div.mobile-menu {
-  display: none;
+div.top-nav-menu-bar ul.top-nav-menu li a:hover {
+  color: #8DC63F;
 }
 
-.product-box {
-  width: 36rem;
+div.top-nav-menu-bar ul.top-nav-menu li a.active {
+  color: #8DC63F;
+}
+
+div#mobile-menu {
+  position: fixed;
+  top: -75vh;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 75vh;
+  background-color: #292828;
+  -webkit-box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.12);
+  z-index: 1000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+div#mobile-menu a.mobile-menu-logo {
+  display: block;
+  padding: 2rem 0 0 2rem;
+  border-bottom: solid rgba(189, 189, 189, 0.05) 1px;
+}
+
+div#mobile-menu div.close-btn-wrapper {
+  position: relative;
+}
+
+div#mobile-menu div.close-btn-wrapper a.close-btn {
+  text-decoration: none;
+  font-size: 5rem;
+  color: #9F9F9F;
+  position: absolute;
+  right: 2rem;
+}
+
+div#mobile-menu ul.mobile-menu-links {
+  padding-top: 2rem;
+}
+
+div#mobile-menu ul.mobile-menu-links a {
+  display: block;
+  color: #9F9F9F;
+  text-decoration: none;
+  padding: 1rem 0 1rem 2rem;
+  font-size: 1.6rem;
+}
+
+div#mobile-menu ul.mobile-menu-links a.active {
+  color: #8DC63F;
+}
+
+div#mobile-menu div.mobile-socials-area {
+  padding: 5rem 0 0 2rem;
+}
+
+div#mobile-menu div.mobile-socials-area a {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #575757;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: .5rem;
+  text-decoration: none;
+}
+
+div#mobile-menu div.mobile-socials-area a i.fab {
+  color: #8DC63F;
+  font-size: 1.8rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+div#mobile-menu div.mobile-socials-area a i.fab:hover {
+  color: #7eae3a;
+}
+
+div.products-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.product-box {
+  width: 35rem;
   height: 42.6rem;
   padding: 2.7rem;
   margin: 1.5rem;
@@ -298,13 +403,13 @@ div.mobile-menu {
   box-shadow: 4px 4px 5px -4px rgba(0, 0, 0, 0.12);
 }
 
-.product-box .product-desc {
+div.product-box h3.product-desc {
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 500;
   color: #575757;
 }
 
-.product-box .product-category-and-rating {
+div.product-box div.product-category-and-rating {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,31 +424,31 @@ div.mobile-menu {
   line-height: 1.7;
 }
 
-.product-box .product-category-and-rating .product-category {
+div.product-box div.product-category-and-rating div.product-category {
   font-size: 1.2rem;
   text-align: left;
 }
 
-.product-box .product-category-and-rating .product-category a {
+div.product-box div.product-category-and-rating div.product-category a {
   text-decoration: none;
   color: #8DC63F;
   font-weight: 500;
 }
 
-.product-box .product-category-and-rating .product-category a:visited {
+div.product-box div.product-category-and-rating div.product-category a:visited {
   color: #8DC63F;
 }
 
-.product-box .product-category-and-rating .product-category a:hover {
+div.product-box div.product-category-and-rating div.product-category a:hover {
   text-decoration: underline;
 }
 
-.product-box .product-category-and-rating .product-rating {
+div.product-box div.product-category-and-rating div.product-rating {
   font-size: 1.2rem;
   text-align: right;
 }
 
-.product-box .buy-now-btn {
+div.product-box a.buy-now-btn {
   padding: 1.5rem;
   margin-top: 2rem;
   background-color: #333333;
@@ -357,16 +462,16 @@ div.mobile-menu {
   transition: .3s;
 }
 
-.product-box .buy-now-btn:hover {
+div.product-box a.buy-now-btn:hover {
   background-color: #242424;
 }
 
-#contact-section {
+section#contact-section {
   background-color: #292828;
   padding: 10rem 0;
 }
 
-#contact-section .contact-hdr {
+section#contact-section h2.contact-hdr {
   font-size: 4.5rem;
   font-weight: 700;
   color: #F5F5F5;
@@ -377,7 +482,7 @@ div.mobile-menu {
   margin: 0 auto;
 }
 
-#contact-section .map-and-contact-form {
+section#contact-section div.map-and-contact-form {
   margin-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -385,13 +490,23 @@ div.mobile-menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-#contact-section .map-and-contact-form .contact-form {
+section#contact-section div.map-and-contact-form img.googleMaps {
+  width: 48%;
+  display: block;
+  margin: 0 auto;
+}
+
+section#contact-section div.map-and-contact-form div.contact-form {
   margin-top: auto;
+  width: 48%;
+  margin-left: auto;
 }
 
-#contact-section .map-and-contact-form .contact-form label {
+section#contact-section div.map-and-contact-form div.contact-form label {
   display: block;
   text-transform: uppercase;
   color: #F5F5F5;
@@ -399,23 +514,34 @@ div.mobile-menu {
   margin-top: 2rem;
 }
 
-#contact-section .map-and-contact-form .contact-form input {
-  width: 57rem;
+section#contact-section div.map-and-contact-form div.contact-form input {
+  width: 100%;
   height: 4rem;
   border-radius: .3rem;
   border: none;
-  margin-top: 1rem;
+  margin-top: .5rem;
+  padding-left: 1rem;
 }
 
-#contact-section .map-and-contact-form .contact-form textarea {
-  width: 57rem;
+section#contact-section div.map-and-contact-form div.contact-form textarea {
+  width: 100%;
   height: 12.3rem;
   border-radius: .3rem;
   border: none;
-  margin-top: 1rem;
+  margin-top: .5rem;
+  text-align: left;
+  padding-left: 1rem;
 }
 
-#contact-section .map-and-contact-form .contact-form .form-btn {
+section#contact-section div.map-and-contact-form div.contact-form div.form-btn input[type=submit] {
+  margin-top: 1rem;
+  background-color: #8DC63F;
+  color: #F5F5F5;
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: block;
+  width: 11.3rem;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,24 +551,96 @@ div.mobile-menu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-transform: uppercase;
 }
 
-#contact-section .map-and-contact-form .contact-form .form-btn input {
-  padding: 2rem;
-  margin-top: 1rem;
-  background-color: #8DC63F;
-  color: #F5F5F5;
-  font-size: 1.6rem;
-  display: block;
+section#contact-section div.map-and-contact-form div.contact-form div.form-btn input[type=submit]:hover {
+  background-color: #7eae3a;
 }
 
 footer {
-  padding: 10rem 0;
+  padding: 10rem 0 5rem 0;
   background-color: #333333;
+  color: #AAA9A9;
+  font-size: 1.4rem;
+}
+
+footer div.footer-top-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer div.footer-top-section div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  line-height: 1.4;
+  padding: 0 0 0 2rem;
+}
+
+footer div.footer-top-section h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: .12rem;
+}
+
+footer div.footer-top-section a {
+  text-decoration: none;
   color: #AAA9A9;
 }
 
-footer .footer-top-section {
+footer div.footer-top-section a:hover {
+  text-decoration: underline;
+}
+
+footer div.footer-top-section div.navigation {
+  width: 10%;
+  padding: 0;
+}
+
+footer div.footer-top-section div.navigation a {
+  padding: .5rem 0;
+  display: block;
+}
+
+footer div.footer-top-section div.follows-us a {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #575757;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: .5rem;
+  text-decoration: none;
+}
+
+footer div.footer-top-section div.follows-us a i.fab {
+  color: #8DC63F;
+  font-size: 1.8rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+footer div.footer-top-section div.follows-us a i.fab:hover {
+  color: #7eae3a;
+}
+
+footer div.footer-top-section div.newsletter div.search-area-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,20 +648,39 @@ footer .footer-top-section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 0;
 }
 
-footer .footer-top-section .navigation,
-footer .footer-top-section .age-restriction,
-footer .footer-top-section .affilates,
-footer .footer-top-section .follows-us,
-footer .footer-top-section .newsletter {
-  width: 15%;
+footer div.footer-top-section div.newsletter div.search-area-wrapper input[type=text] {
+  height: 3rem;
+  border-radius: .5rem;
+  border: none;
+  padding: 0 1rem;
 }
 
-footer .footer-btm-section {
+footer div.footer-top-section div.newsletter div.search-area-wrapper input[type=submit] {
+  background-color: #8DC63F;
+  color: #F5F5F5;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: block;
+  height: 3rem;
+  width: 8rem;
+  margin-left: .5rem;
+  text-align: center;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+footer div.footer-top-section div.newsletter div.search-area-wrapper input[type=submit]:hover {
+  background-color: #7eae3a;
+}
+
+footer div.footer-btm-section {
   margin-top: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -477,12 +694,21 @@ footer .footer-btm-section {
           flex-direction: row;
 }
 
-footer .footer-btm-section .footer-copyright-info {
+footer div.footer-btm-section p.footer-copyright-info {
   margin-top: auto;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
 }
 
-header .nicotine-warning {
+footer div.footer-btm-section p.footer-copyright-info a {
+  text-decoration: none;
+  color: #AAA9A9;
+}
+
+footer div.footer-btm-section p.footer-copyright-info a:hover {
+  text-decoration: underline;
+}
+
+header div.nicotine-warning {
   background-color: #292828;
   color: #F7FBFC;
   height: 5.4rem;
@@ -495,57 +721,67 @@ header .nicotine-warning {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 2rem 0;
 }
 
-#homepage-section {
+header div.nicotine-warning p.nicotine-warning-txt {
+  text-align: center;
+  width: 100%;
+}
+
+section#homepage-section {
   padding-top: 27vh;
 }
 
-#homepage-section h1.homepage-hdr {
+section#homepage-section h1.homepage-hdr {
   color: #575757;
   font-size: 4.5rem;
   font-weight: 700;
   text-align: center;
 }
 
-#homepage-section .homepage-sub-hdr {
+section#homepage-section p.homepage-sub-hdr {
   color: #8DC63F;
   font-size: 3.3rem;
   font-weight: 300;
   text-align: center;
 }
 
-#homepage-section .homepage-content {
+section#homepage-section div.homepage-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 4rem;
 }
 
-#homepage-section .homepage-content .homepage-left-side .homepage-intro-txt-sub-hdr {
+section#homepage-section div.homepage-content div.homepage-left-side {
+  width: 40%;
+}
+
+section#homepage-section div.homepage-content div.homepage-left-side h2.homepage-intro-txt-sub-hdr {
   font-size: 3.4rem;
   color: #292828;
   font-weight: 900;
-  margin-top: 12rem;
+  margin-top: 10rem;
 }
 
-#homepage-section .homepage-content .homepage-left-side img {
+section#homepage-section div.homepage-content div.homepage-left-side img {
   margin-top: 1rem;
 }
 
-#homepage-section .homepage-content .homepage-left-side .homepage-intro-txt {
+section#homepage-section div.homepage-content div.homepage-left-side p.homepage-intro-txt {
   margin-top: 2rem;
   line-height: 1.5;
 }
 
-#homepage-section .homepage-content .homepage-left-side .homepage-btn {
+section#homepage-section div.homepage-content div.homepage-left-side button.homepage-btn {
   margin-top: 3.6rem;
   background-color: #333333;
   border-radius: .3rem;
   height: 5.3rem;
 }
 
-#homepage-section .homepage-content .homepage-left-side .homepage-btn a {
+section#homepage-section div.homepage-content div.homepage-left-side button.homepage-btn a {
   text-decoration: none;
   color: #8DC63F;
   font-size: 1.6rem;
@@ -555,17 +791,25 @@ header .nicotine-warning {
   transition: .4s;
 }
 
-#homepage-section .homepage-content .homepage-left-side .homepage-btn a:hover {
+section#homepage-section div.homepage-content div.homepage-left-side button.homepage-btn a:hover {
   background-color: #212121;
 }
 
-#about-section {
+section#homepage-section div.homepage-content div.homepage-right-side {
+  width: 60%;
+}
+
+section#homepage-section div.homepage-content div.homepage-right-side img.homepage-main-image {
+  display: block;
+}
+
+section#about-section {
   background-color: #F4F4F4;
   padding: 8.8rem 0;
   margin-top: 8rem;
 }
 
-#about-section .about-hdr {
+section#about-section h2.about-hdr {
   font-size: 4.5rem;
   font-weight: 700;
   color: #575757;
@@ -576,13 +820,13 @@ header .nicotine-warning {
   margin: 0 auto;
 }
 
-#about-section img {
+section#about-section img {
   display: block;
   margin: 1rem auto;
 }
 
-#about-section .about-paragraph-1,
-#about-section .about-paragraph-2 {
+section#about-section p.about-paragraph-1,
+section#about-section p.about-paragraph-2 {
   font-size: 1.6rem;
   font-weight: 400;
   color: #575757;
@@ -592,28 +836,28 @@ header .nicotine-warning {
   margin: 3rem auto 0 auto;
 }
 
-#about-section .about-paragraph-1 span,
-#about-section .about-paragraph-2 span {
+section#about-section p.about-paragraph-1 span,
+section#about-section p.about-paragraph-2 span {
   color: #8DC63F;
 }
 
-#about-section .about-paragraph-1 span a,
-#about-section .about-paragraph-2 span a {
+section#about-section p.about-paragraph-1 span a,
+section#about-section p.about-paragraph-2 span a {
   text-decoration: none;
   color: #8DC63F;
 }
 
-#about-section .about-paragraph-1 span a:visited,
-#about-section .about-paragraph-2 span a:visited {
+section#about-section p.about-paragraph-1 span a:visited,
+section#about-section p.about-paragraph-2 span a:visited {
   color: #8DC63F;
 }
 
-#about-section .about-paragraph-1 span a:hover,
-#about-section .about-paragraph-2 span a:hover {
+section#about-section p.about-paragraph-1 span a:hover,
+section#about-section p.about-paragraph-2 span a:hover {
   text-decoration: underline;
 }
 
-#about-section .about-btn {
+section#about-section button.about-btn {
   margin: 3.6rem auto;
   background-color: #8DC63F;
   border-radius: .3rem;
@@ -621,7 +865,7 @@ header .nicotine-warning {
   display: block;
 }
 
-#about-section .about-btn a {
+section#about-section button.about-btn a {
   text-decoration: none;
   color: #333;
   font-size: 1.6rem;
@@ -631,41 +875,449 @@ header .nicotine-warning {
   transition: .4s;
 }
 
-#about-section .about-btn a:hover {
+section#about-section button.about-btn a:hover {
   background-color: #7eae3a;
   color: #212121;
 }
 
-#top-picks-section {
-  background-image: url("/imgs/top-picks-section/compressed/top-picks-bg.jpg");
+section#top-picks-section {
+  background-image: url("/imgs/top-picks-section/top-picks-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 10rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
-#top-picks-section .top-picks-hdr {
+section#top-picks-section h2.top-picks-hdr {
   font-size: 4.5rem;
   font-weight: 700;
   color: #292828;
   text-align: center;
-  padding-bottom: 1rem;
+  padding-bottom: 7rem;
   width: 80%;
   margin: 0 auto;
 }
 
-#top-picks-section .top-picks-products-section {
-  margin-top: 8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+section#e-liquids-hdr-section {
+  padding-top: 21rem;
+}
+
+section#e-liquids-hdr-section h1.e-liquids-hdr {
+  color: #575757;
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+section#e-liquids-hdr-section p.e-liquids-sub-hdr {
+  color: #8DC63F;
+  font-size: 3.3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+section#e-liquids-hdr-section img.e-liquids-hdr-stars {
+  display: block;
+  margin: .5rem auto 0 auto;
+}
+
+section#e-liquids-hdr-section img.e-liquids-top-img {
+  display: block;
+  margin: 3rem auto 0 auto;
+}
+
+section.e-liquids-product-section {
+  background-color: #F4F4F4;
+  padding: 10rem 0;
+}
+
+section#vape-kits-hdr-section {
+  padding-top: 21rem;
+}
+
+section#vape-kits-hdr-section h1.vape-kits-hdr {
+  color: #575757;
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+section#vape-kits-hdr-section p.vape-kits-sub-hdr {
+  color: #8DC63F;
+  font-size: 3.3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+section#vape-kits-hdr-section img.vape-kits-hdr-stars {
+  display: block;
+  margin: .5rem auto 0 auto;
+}
+
+section#vape-kits-hdr-section img.vape-kits-top-img {
+  display: block;
+  margin: 3rem auto 0 auto;
+}
+
+section.vape-kits-product-section {
+  background-color: #F4F4F4;
+  padding: 10rem 0;
+}
+
+section#vape-coils-hdr-section {
+  padding-top: 21rem;
+  padding-bottom: 8rem;
+}
+
+section#vape-coils-hdr-section h1.vape-coils-hdr {
+  color: #575757;
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+section#vape-coils-hdr-section p.vape-coils-sub-hdr {
+  color: #8DC63F;
+  font-size: 3.3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+section#vape-coils-hdr-section img.vape-coils-hdr-stars {
+  display: block;
+  margin: .5rem auto 0 auto;
+}
+
+section#vape-coils-hdr-section img.vape-coils-top-img {
+  display: block;
+  margin: 3rem auto 0 auto;
+}
+
+section.vape-coils-product-section {
+  background-color: #F4F4F4;
+  padding: 10rem 0;
+}
+
+section#vape-tanks-hdr-section {
+  padding-top: 21rem;
+  padding-bottom: 8rem;
+}
+
+section#vape-tanks-hdr-section h1.vape-tanks-hdr {
+  color: #575757;
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+section#vape-tanks-hdr-section p.vape-tanks-sub-hdr {
+  color: #8DC63F;
+  font-size: 3.3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+section#vape-tanks-hdr-section img.vape-tanks-hdr-stars {
+  display: block;
+  margin: .5rem auto 0 auto;
+}
+
+section#vape-tanks-hdr-section img.vape-tanks-top-img {
+  display: block;
+  margin: 3rem auto 0 auto;
+}
+
+section.vape-tanks-product-section {
+  background-color: #F4F4F4;
+  padding: 10rem 0;
+}
+
+section#vape-accessories-hdr-section {
+  padding-top: 21rem;
+  padding-bottom: 8rem;
+}
+
+section#vape-accessories-hdr-section h1.vape-accessories-hdr {
+  color: #575757;
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+section#vape-accessories-hdr-section p.vape-accessories-sub-hdr {
+  color: #8DC63F;
+  font-size: 3.3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+section#vape-accessories-hdr-section img.vape-accessories-hdr-stars {
+  display: block;
+  margin: .5rem auto 0 auto;
+}
+
+section#vape-accessories-hdr-section img.vape-accessories-top-img {
+  display: block;
+  margin: 3rem auto 0 auto;
+}
+
+section.vape-accessories-product-section {
+  background-color: #F4F4F4;
+  padding: 10rem 0;
+}
+
+/* ===================================================================
+            Media Queries: General Styles
+=================================================================== */
+/*  Large Screens & Desktop  */
+@media only screen and (max-width: 1050px) {
+  header div.top-nav-logo-bar {
+    -webkit-box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.12);
+  }
+  header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper {
+    padding: 0 2rem;
+    width: 100vw;
+  }
+  header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.top-nav-logo-and-stars a svg {
+    width: 14.6rem;
+    height: 7.8rem;
+  }
+  header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.mobile-socials-area {
+    display: none;
+  }
+  header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.hamburger-wrapper {
+    display: block;
+    margin-left: auto;
+  }
+  header div.top-nav-menu-bar {
+    display: none;
+  }
+}
+
+/*  Large Screens & Desktop  */
+/*  Small Laptop Screens  */
+/*  Tablets  */
+/*  Larger Phones  */
+@media only screen and (max-width: 370px) {
+  header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.top-nav-logo-and-stars img {
+    padding-left: 0;
+  }
+}
+
+/* ===================================================================
+            Media Queries: Homepage
+=================================================================== */
+/*  Large Screens & Desktop  */
+/*  Large Screens & Desktop  */
+/*  Large Screens & Desktop  */
+/*  Large Screens & Desktop  */
+/*  Large Screens & Desktop  */
+@media only screen and (max-width: 1050px) {
+  section#homepage-section {
+    padding-top: calc(27vh - 5rem);
+  }
+  section#homepage-section div.homepage-content div.homepage-left-side div.homepage-intro-txt-sub-hdr {
+    margin-top: 3rem;
+  }
+}
+
+/*  Tablets  */
+@media only screen and (max-width: 960px) {
+  section#homepage-section p.homepage-sub-hdr {
+    width: 60%;
+    margin: 0 auto;
+  }
+  section#homepage-section div.homepage-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#homepage-section div.homepage-content div.homepage-left-side {
+    width: 100%;
+    margin-left: auto;
+    text-align: right;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  section#homepage-section div.homepage-content div.homepage-right-side {
+    width: 100%;
+    margin: 0 auto;
+  }
+  section#homepage-section div.homepage-content div.homepage-right-side img.homepage-main-image {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/*  Phones  */
+@media only screen and (max-width: 600px) {
+  section#homepage-section .homepage-sub-hdr {
+    width: 95%;
+    margin: 0 auto;
+  }
+  section#homepage-section .homepage-content .homepage-left-side .homepage-intro-txt-sub-hdr {
+    font-size: 3.4rem;
+    color: #292828;
+    margin-top: 0;
+  }
+  section#homepage-section .homepage-content .homepage-right-side {
+    width: 100%;
+  }
+}
+
+/*  Phones  */
+@media only screen and (max-width: 514px) {
+  section#homepage-section h1.homepage-hdr {
+    font-size: 3.5rem;
+  }
+  section#homepage-section p.homepage-sub-hdr {
+    font-size: 2.5rem;
+  }
+  section#homepage-section div.homepage-content div.homepage-left-side h2.homepage-intro-txt-sub-hdr {
+    font-size: 3rem;
+  }
+}
+
+/*  Phones  */
+/* ===================================================================
+            Media Queries: Menu - Menu Nav
+=================================================================== */
+/*  Large Screens & Desktop  */
+/*  Small Laptop Screens  */
+/*  Tablets  */
+/*  Larger Phones  */
+/*  Medium Phones  */
+/*  Small Phones  */
+/* ===================================================================
+            Media Queries: Menu - Brunch
+=================================================================== */
+/*  Large Screens & Desktop  */
+/*  Small Laptop Screens  */
+/*  Tablets  */
+/*  Larger Phones  */
+/*  Medium Phones  */
+/*  Small Phones  */
+/* ===================================================================
+            Media Queries: Menu - Mains
+=================================================================== */
+/*  Large Screens & Desktop  */
+/*  Small Laptop Screens  */
+/*  Tablets  */
+/*  Larger Phones  */
+/*  Small Phones  */
+/* ===================================================================
+            Media Queries: Menu - Beers
+=================================================================== */
+/*  Large Screens & Desktop  */
+/*  Small Laptop Screens  */
+/*  Tablets  */
+/*  Larger Phones  */
+/*  Small Phones  */
+/* ===================================================================
+            Media Queries: Bookings
+=================================================================== */
+/*  Large Screens & Desktop  */
+/*  Small Laptop Screens  */
+/*  Tablets  */
+/*  Larger Phones  */
+/*  Small Phones  */
+/*  Small Phones  */
+/* ===================================================================
+            Media Queries: Specials
+=================================================================== */
+/*  Small Laptop Screens  */
+/*  Small Laptop Screens  */
+/*  Larger Phones  */
+/*  Larger Phones  */
+/*  Small Phones  */
+/* ===================================================================
+            Media Queries: Locations
+=================================================================== */
+/*  Large Screens & Desktop  */
+/*  Small Laptop Screens  */
+/*  Tablets  */
+/*  Larger Phones  */
+/*  Small Phones  */
+/* ===================================================================
+            Media Queries: Opening Hours
+=================================================================== */
+/*  Small Laptop Screens  */
+/*  Large Screens & Desktop  */
+/*  Tablets  */
+/*  Larger Phones  */
+/*  Small Phones  */
+/* ===================================================================
+            Media Queries: Privacy
+=================================================================== */
+/*  Small Laptop Screens  */
+/*  Large Screens & Desktop  */
+/*  Tablets  */
+/*  Larger Phones  */
+/*  Small Phones  */
+/* ===================================================================
+            Media Queries: Contact
+=================================================================== */
+/*  Small Laptop Screens  */
+/*  Tablets  */
+@media only screen and (max-width: 850px) {
+  section#contact-section {
+    padding: 10rem 0;
+  }
+  section#contact-section div.map-and-contact-form {
+    margin-top: 5rem;
+  }
+  section#contact-section div.map-and-contact-form img.googleMaps {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  section#contact-section div.map-and-contact-form div.contact-form {
+    width: 100%;
+  }
+}
+
+/*  Larger Phones  */
+/*  Small Phones  */
+/* ===================================================================
+            Media Queries: Footer
+=================================================================== */
+/*  Small Laptop Screens  */
+/*  Large Screens & Desktop  */
+@media only screen and (max-width: 1047px) {
+  footer {
+    padding: 5rem 0;
+  }
+  footer div.footer-top-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer div.footer-top-section div {
+    padding: 3rem 0;
+  }
+  footer div.footer-top-section div.navigation {
+    width: 100%;
+  }
+  footer div.footer-top-section div.age-restriction,
+  footer div.footer-top-section div.affilates {
+    width: 50%;
+  }
+}
+
+/*  Tablets  */
+/*  Larger Phones  */
+/*  Small Phones  */
+@media only screen and (max-width: 450px) {
+  footer div.footer-top-section div.age-restriction,
+  footer div.footer-top-section div.affilates {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

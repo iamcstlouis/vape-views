@@ -1,0 +1,32 @@
+section#e-liquids-hdr-section {
+    padding-top: 21rem;
+
+    h1.e-liquids-hdr {
+        color: $clr-page-hdr-grey;
+        font-size: 4.5rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    p.e-liquids-sub-hdr {
+        color: $clr-accent;
+        font-size: 3.3rem;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    img.e-liquids-hdr-stars {
+        display: block;
+        margin: .5rem auto 0 auto;
+    }
+
+    img.e-liquids-top-img {
+        display: block;
+        margin: 3rem auto 0 auto;
+    }
+}
+
+section.e-liquids-product-section {
+    background-color: $clr-product-section-bg;
+    padding: 10rem 0;
+}

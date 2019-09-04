@@ -5,3 +5,15 @@
 @mixin product-btn-hover {
     transition: .3s;
 }
+
+@mixin top-nav-btn-hover {
+    transition: .3s;
+}
+
+@mixin contact-form-btn-hover {
+    transition: .3s;
+}
+
+@mixin btn-hover {
+    transition: .3s;
+}

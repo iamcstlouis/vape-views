@@ -19,37 +19,15 @@
     <header>
 
         <!--    /////////////////////////////////////////////////////////////////////
-                                    Hamburger Menu: SVG
-///////////////////////////////////////////////////////////////////////////-->
-
-        <div class="hamburger-wrapper">
-            <div class="hamburger-icon">
-                <a href="#" onclick="openSlideMenu()">
-                    <svg width="34" height="19" viewBox="0 0 34 19">
-                        <defs>
-                            <clipPath id="a">
-                                <rect width="34" height="19" fill="none" />
-                            </clipPath>
-                        </defs>
-                        <g clip-path="url(#a)">
-                            <line x2="34" transform="translate(0 1.5)" fill="none" stroke="#9f9f9f" stroke-width="3" />
-                            <line x2="28" transform="translate(6 9.5)" fill="none" stroke="#9f9f9f" stroke-width="3" />
-                            <line x2="20" transform="translate(14 17.5)" fill="none" stroke="#9f9f9f"
-                                stroke-width="3" />
-                        </g>
-                    </svg>
-                </a>
-            </div>
-        </div>
-
-        <!--    /////////////////////////////////////////////////////////////////////
                                     Top Nav
 ///////////////////////////////////////////////////////////////////////////-->
 
         <div class="nicotine-warning">
-            <p class="nicotine-warning-txt">
-                WARNING: Some of these products contain nicotine. Nicotine is an addictive chemical.
-            </p>
+            <div class="container">
+                <p class="nicotine-warning-txt">
+                    WARNING: Some of these products contain nicotine. Nicotine is an addictive chemical.
+                </p>
+            </div>
         </div>
 
         <div class="top-nav-logo-bar">
@@ -78,12 +56,36 @@
                     <img src="./imgs/top-nav/stars.png" alt="VapeViews 5 Star Vapes and Vape products">
                 </div>
 
-                <div class="search-area">
-                    <div class="search-bar">
-                        <input type="text" placeholder="Search for products...">
-                    </div>
-                    <div class="search-btn">
-                        <a href="#">Search</a>
+                <div class="mobile-socials-area">
+                    <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <!--    /////////////////////////////////////////////////////////////////////
+                                    Hamburger Menu: SVG
+///////////////////////////////////////////////////////////////////////////-->
+
+                <div class="hamburger-wrapper">
+                    <div class="hamburger-icon">
+                        <a href="#" onclick="openSlideMenu()">
+                            <svg width="34" height="19" viewBox="0 0 34 19">
+                                <defs>
+                                    <clipPath id="a">
+                                        <rect width="34" height="19" fill="none" />
+                                    </clipPath>
+                                </defs>
+                                <g clip-path="url(#a)">
+                                    <line x2="34" transform="translate(0 1.5)" fill="none" stroke="#9f9f9f"
+                                        stroke-width="3" />
+                                    <line x2="28" transform="translate(6 9.5)" fill="none" stroke="#9f9f9f"
+                                        stroke-width="3" />
+                                    <line x2="20" transform="translate(14 17.5)" fill="none" stroke="#9f9f9f"
+                                        stroke-width="3" />
+                                </g>
+                            </svg>
+                        </a>
                     </div>
                 </div>
 
@@ -103,16 +105,46 @@
         <!--    /////////////////////////////////////////////////////////////////////
                                      Mobile Menu
 ///////////////////////////////////////////////////////////////////////////-->
-        <div class="mobile-menu">
-            <a href="#" class="close-btn" onclick="closeSlideMenu()">&times;</a>
+        <div id="mobile-menu">
+            <a href="./index.html" class="mobile-menu-logo">
+                <svg width="81.956" height="43" viewBox="0 0 81.956 43">
+                    <defs>
+                        <clipPath id="a">
+                            <rect width="81.956" height="43" fill="none" />
+                        </clipPath>
+                    </defs>
+                    <g clip-path="url(#a)"><text transform="translate(0 33)" fill="#fff" font-size="36"
+                            font-family="Xirod-Regular, Xirod" letter-spacing="0.1em">
+                            <tspan x="0" y="0">V</tspan>
+                        </text>
+                        <g transform="translate(26.956 11.005)"><text transform="translate(9.841 9)" fill="#8dc63f"
+                                font-size="10" font-family="Xirod-Regular, Xirod" letter-spacing="0.1em">
+                                <tspan x="0" y="0">ape</tspan>
+                            </text><text transform="translate(0 24.408)" fill="#fff" font-size="15"
+                                font-family="Homoarakhn" letter-spacing="0.1em">
+                                <tspan x="0" y="0">iews</tspan>
+                            </text></g>
+                    </g>
+                </svg>
+            </a>
+            <div class="close-btn-wrapper">
+                <a href="#" class="close-btn" onclick="closeSlideMenu()">&times;</a>
+            </div>
             <ul class="mobile-menu-links">
-                <li>Home</li>
-                <li>E-Liquids</li>
-                <li>Vape Kits</li>
-                <li>Tanks</li>
-                <li>Coils</li>
-                <li>Accessories</li>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./pages/e-liquids.html">E-Liquids</a></li>
+                <li><a href="./pages/vape-kits.html">Vape Kits</a></li>
+                <li><a href="./pages/vape-tanks.html">Tanks</a></li>
+                <li><a href="./pages/vape-coils.html">Coils</a></li>
+                <li><a href="./pages/vape-accessories.html">Accessories</a></li>
             </ul>
+
+            <div class="mobile-socials-area">
+                <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
 
     </header>
@@ -122,12 +154,12 @@
 ///////////////////////////////////////////////////////////////////////////-->
 
     <section id="homepage-section" class="container">
-        <h1 class="homepage-hdr">Welcome to Vape Views</h1>
+        <h1 class="homepage-hdr">Welcome to VapeViews</h1>
         <p class="homepage-sub-hdr">Find the best vapes & vape products for you</p>
 
         <div class="homepage-content">
             <div class="homepage-left-side">
-                <h2 class="homepage-intro-txt-sub-hdr">We recommend top rated <br>
+                <h2 class="homepage-intro-txt-sub-hdr">We recommend top rated
                     vapes & vape products
                 </h2>
                 <img src="./imgs/home-page/homepage-stars.png" alt="VapeViews 5 star vapes & vape products">
@@ -142,7 +174,7 @@
 
 
             <div class="homepage-right-side">
-                <img src="./imgs/home-page/home-header-image.png" alt="Vape Views top rated e-liquids"
+                <img src="./imgs/home-page/home-header-image.png" alt="VapeViews top rated e-liquids"
                     class="homepage-main-image">
             </div>
 
@@ -155,13 +187,13 @@
 
     <section id="about-section">
         <div class="container">
-            <h2 class="about-hdr">About Vape Views</h2>
-            <img src="./imgs/about-section/about-page-stars.png" alt="Vape Views 5 star vapes & vape products">
+            <h2 class="about-hdr">About VapeViews</h2>
+            <img src="./imgs/about-section/about-page-stars.png" alt="VapeViews 5 star vapes & vape products">
             <p class="about-paragraph-1">
                 It’s a challenge to transition away from traditional forms of tobacco and nicotine. Every week there’s
                 something new; <span>vape kits, flavours, new liquids, accessories…</span> These can be overwhelming and
                 hard to get your head around. This is not how we want you to see it. At <span><a
-                        href="./index.html">Vape Views</a> </span> we aim
+                        href="./index.html">VapeViews</a> </span> we aim
                 to
                 guide you
                 through every step of
@@ -186,11 +218,11 @@
         <div class="container">
             <h2 class="top-picks-hdr">Our Top Picks</h2>
 
-            <div class="top-picks-products-section">
+            <div class="products-wrapper">
 
                 <div class="product-1 product-box">
                     <img src="./imgs/top-picks-section/products/top-picks-img-1.png"
-                        alt="Vape Views top picks - E-Liquids">
+                        alt="VapeViews top picks - E-Liquids">
                     <h3 class="product-desc">Just juice Blood Orange, Citrus & Guava fruit E-Liquid 50ML</h3>
                     <div class="product-category-and-rating">
                         <div class="product-category">
@@ -199,7 +231,7 @@
                         </div>
                         <div class="product-rating">
                             <p>Product Rating:</p>
-                            <img src="./imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
+                            <img src="./imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
                         </div>
                     </div>
                     <a href="https://www.amazon.co.uk/Just-Juice-Shortfill-Authentic-Nicotine/dp/B07RXZD2GS/ref=sr_1_4?crid=3PMR53B38SR4O&keywords=just+juice+e+liquid&qid=1567211956&s=gateway&sprefix=just+juice%2Caps%2C160&sr=8-4"
@@ -208,7 +240,7 @@
 
                 <div class="product-2 product-box">
                     <img src="./imgs/top-picks-section/products/top-picks-img-2.png"
-                        alt="Vape Views top picks - E-Liquids">
+                        alt="VapeViews top picks - E-Liquids">
                     <h3 class="product-desc">just juice mango and passion fruit E-Liquid 50ML</h3>
                     <div class="product-category-and-rating">
                         <div class="product-category">
@@ -217,7 +249,7 @@
                         </div>
                         <div class="product-rating">
                             <p>Product Rating:</p>
-                            <img src="./imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
+                            <img src="./imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
                         </div>
                     </div>
                     <a href="https://www.amazon.co.uk/Just-Juice-Shortfill-Authentic-Nicotine/dp/B07RXWC3M7/ref=sr_1_1?crid=3PMR53B38SR4O&keywords=just+juice+e+liquid&qid=1567212577&s=gateway&sprefix=just+juice%2Caps%2C160&sr=8-1"
@@ -226,7 +258,7 @@
 
                 <div class="product-3 product-box">
                     <img src="./imgs/top-picks-section/products/top-picks-img-3.png"
-                        alt="Vape Views top picks - E-Liquids">
+                        alt="VapeViews top picks - E-Liquids">
                     <h3 class="product-desc">Just juice Berry Burst fruit E-Liquid 50ML</h3>
                     <div class="product-category-and-rating">
                         <div class="product-category">
@@ -235,7 +267,7 @@
                         </div>
                         <div class="product-rating">
                             <p>Product Rating:</p>
-                            <img src="./imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
+                            <img src="./imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
                         </div>
                     </div>
                     <a href="https://www.amazon.co.uk/Just-Juice-Shortfill-Authentic-Nicotine/dp/B07RXZB5QR/ref=sr_1_2?crid=3PMR53B38SR4O&keywords=just+juice+e+liquid&qid=1567212577&s=gateway&sprefix=just+juice%2Caps%2C160&sr=8-2"
@@ -244,7 +276,7 @@
 
                 <div class="product-4 product-box">
                     <img src="./imgs/top-picks-section/products/top-picks-img-4.png"
-                        alt="Vape Views top picks - E-Liquids">
+                        alt="VapeViews top picks - E-Liquids">
                     <h3 class="product-desc">Just juice Blue Raspberry fruit E-Liquid 50ML</h3>
                     <div class="product-category-and-rating">
                         <div class="product-category">
@@ -253,7 +285,7 @@
                         </div>
                         <div class="product-rating">
                             <p>Product Rating:</p>
-                            <img src="./imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
+                            <img src="./imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
                         </div>
                     </div>
                     <a href="https://www.amazon.co.uk/Just-Juice-Raspberry-Shortfill-Authentic/dp/B07RXWJRR1/ref=sr_1_3?crid=3PMR53B38SR4O&keywords=just+juice+e+liquid&qid=1567212577&s=gateway&sprefix=just+juice%2Caps%2C160&sr=8-3"
@@ -262,7 +294,7 @@
 
                 <div class="product-5 product-box">
                     <img src="./imgs/top-picks-section/products/top-picks-img-5.png"
-                        alt="Vape Views top picks - E-Liquids">
+                        alt="VapeViews top picks - E-Liquids">
                     <h3 class="product-desc">Vaping Bad Pink lemonade E-Liquid 120ML</h3>
                     <div class="product-category-and-rating">
                         <div class="product-category">
@@ -271,7 +303,7 @@
                         </div>
                         <div class="product-rating">
                             <p>Product Rating:</p>
-                            <img src="./imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
+                            <img src="./imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
                         </div>
                     </div>
                     <a href="https://www.amazon.co.uk/Vaping-Bad-Premium-Lemonade-Flavour/dp/B07SRF7MP8/ref=sr_1_7?keywords=e-juice&qid=1567213544&s=drugstore&sr=1-7"
@@ -280,7 +312,7 @@
 
                 <div class="product-6 product-box">
                     <img src="./imgs/top-picks-section/products/top-picks-img-6.png"
-                        alt="Vape Views top picks - E-Liquids">
+                        alt="VapeViews top picks - E-Liquids">
                     <h3 class="product-desc">Vape Starter Kit E cig with 1500 MAH Rechargeable Battery</h3>
                     <div class="product-category-and-rating">
                         <div class="product-category">
@@ -289,7 +321,7 @@
                         </div>
                         <div class="product-rating">
                             <p>Product Rating:</p>
-                            <img src="./imgs/product-stars.png" alt="Vape Views 5 star vapes & vape products">
+                            <img src="./imgs/product-stars.png" alt="VapeViews 5 star vapes & vape products">
                         </div>
                     </div>
                     <a href="https://www.amazon.co.uk/Starter-Cigarettes-20W-80W-Rechargeable-Nicotine/dp/B07TCDZBM5/ref=sr_1_12?keywords=vape+starter+kit&qid=1567213848&s=drugstore&sr=1-12"
@@ -307,9 +339,7 @@
         <div class="container">
             <h2 class="contact-hdr">Contact Us</h2>
             <div class="map-and-contact-form">
-                <div class="googleMaps">
-                    <img src="./imgs/contact-map.jpg" alt="">
-                </div>
+                <img src="./imgs/contact-map.jpg" alt="" class="googleMaps">
 
                 <div class="contact-form">
                     <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
@@ -328,8 +358,7 @@
 
                         <div class="form-msg">
                             <label for="message">Message:</label>
-                            <textarea name="message" id="message" required>
-                            <?php echo isset($_POST['message']) ? $message : ''; ?>
+                            <textarea name="message" id="message" required>$message : ''; ?>
                         </textarea>
                         </div>
 
@@ -362,29 +391,44 @@
                         <li><a href="./pages/vape-accessories.html">Vape Accessories</a></li>
                     </ul>
                 </div>
+
                 <div class="age-restriction">
                     <h4>Age Restriction</h4>
                     <p>Vapes and many of their associated products are age restricted. You must be 18+ to make a
                         purchase.
                     </p>
                 </div>
+
                 <div class="affilates">
                     <h4>Affiliates</h4>
                     <p>Though the products we review are linked to the Amazon site, we have no official affiliation with
                         Amazon
                         or their respected products.</p>
                 </div>
+
                 <div class="follows-us">
                     <h4>Follow Us</h4>
-                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
                 </div>
+
+                <div class="newsletter">
+                    <h4>Newsletter</h4>
+                    <div class="search-area-wrapper">
+                        <input type="text" placeholder="Email Address">
+                        <input type="submit" name="submit" value="Sign Up">
+                    </div>
+
+
+
+                </div>
+
             </div>
 
             <div class="footer-btm-section">
-                <a href="./index.html">
+                <a href="./index.html" class="footer-logo">
                     <svg width="81.956" height="43" viewBox="0 0 81.956 43">
                         <defs>
                             <clipPath id="a">
@@ -413,6 +457,12 @@
 
     </footer>
 
+    <script src="./js/mobile-menu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./js/jquery.smoothscroll.js"></script>
+    <script src="./js/jquery.smoothscroll.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
