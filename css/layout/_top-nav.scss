@@ -1,7 +1,7 @@
 header {
-
     position: fixed;
     width: 100%;
+    z-index: 990;
 
     div.top-nav-logo-bar {
         background-color: $clr-top-nav-bg-dark;

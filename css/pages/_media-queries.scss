@@ -1,5 +1,5 @@
 /* ===================================================================
-            Media Queries: General Styles
+            Media Queries: Top Nav Styles
 =================================================================== */
 
 /*  Large Screens & Desktop  */
@@ -42,18 +42,6 @@
     }
 }
 
-/*  Large Screens & Desktop  */
-
-@media only screen and (max-width: 1050px) {}
-
-/*  Small Laptop Screens  */
-
-@media only screen and (max-width: 1005px) {}
-
-/*  Tablets  */
-
-@media only screen and (max-width: 550px) {}
-
 /*  Larger Phones  */
 
 @media only screen and (max-width: 370px) {
@@ -76,22 +64,6 @@
 
 /*  Large Screens & Desktop  */
 
-@media only screen and (max-width: 1178px) {}
-
-/*  Large Screens & Desktop  */
-
-@media only screen and (max-width: 1176px) {}
-
-/*  Large Screens & Desktop  */
-
-@media only screen and (max-width: 1120px) {}
-
-/*  Large Screens & Desktop  */
-
-@media only screen and (max-width: 1078px) {}
-
-/*  Large Screens & Desktop  */
-
 @media only screen and (max-width: 1050px) {
 
     section#homepage-section {
@@ -107,7 +79,6 @@
         }
     }
 }
-
 
 /*  Tablets  */
 
@@ -191,243 +162,8 @@
     }
 }
 
-
-/*  Phones  */
-
-@media only screen and (max-width: 450px) {}
-
 /* ===================================================================
-            Media Queries: Menu - Menu Nav
-=================================================================== */
-
-/*  Large Screens & Desktop  */
-
-@media only screen and (max-width: 459px) {}
-
-/*  Small Laptop Screens  */
-
-@media only screen and (max-width: 992px) {}
-
-/*  Tablets  */
-
-@media only screen and (max-width: 900px) {}
-
-/*  Larger Phones  */
-
-@media only screen and (max-width: 600px) {}
-
-/*  Medium Phones  */
-
-@media only screen and (max-width: 500px) {}
-
-/*  Small Phones  */
-
-@media only screen and (max-width: 400px) {}
-
-
-/* ===================================================================
-            Media Queries: Menu - Brunch
-=================================================================== */
-
-/*  Large Screens & Desktop  */
-
-@media only screen and (max-width: 1200px) {}
-
-/*  Small Laptop Screens  */
-
-@media only screen and (max-width: 1000px) {}
-
-/*  Tablets  */
-
-@media only screen and (max-width: 900px) {}
-
-/*  Larger Phones  */
-
-@media only screen and (max-width: 768px) {}
-
-/*  Medium Phones  */
-
-@media only screen and (max-width: 600px) {}
-
-/*  Small Phones  */
-
-@media only screen and (max-width: 400px) {}
-
-/* ===================================================================
-            Media Queries: Menu - Mains
-=================================================================== */
-
-/*  Large Screens & Desktop  */
-
-@media only screen and (max-width: 1200px) {}
-
-/*  Small Laptop Screens  */
-
-@media only screen and (max-width: 921px) {}
-
-/*  Tablets  */
-
-@media only screen and (max-width: 900px) {}
-
-/*  Larger Phones  */
-
-@media only screen and (max-width: 600px) {}
-
-/*  Small Phones  */
-
-@media only screen and (max-width: 400px) {}
-
-/* ===================================================================
-            Media Queries: Menu - Beers
-=================================================================== */
-
-/*  Large Screens & Desktop  */
-
-@media only screen and (max-width: 1200px) {}
-
-/*  Small Laptop Screens  */
-
-@media only screen and (max-width: 1060px) {}
-
-/*  Tablets  */
-
-@media only screen and (max-width: 850px) {}
-
-/*  Larger Phones  */
-
-@media only screen and (max-width: 600px) {}
-
-/*  Small Phones  */
-
-@media only screen and (max-width: 490px) {}
-
-/* ===================================================================
-            Media Queries: Bookings
-=================================================================== */
-
-/*  Large Screens & Desktop  */
-
-@media only screen and (max-width: 1200px) {}
-
-/*  Small Laptop Screens  */
-
-@media only screen and (max-width: 1000px) {}
-
-/*  Tablets  */
-
-@media only screen and (max-width: 800px) {}
-
-/*  Larger Phones  */
-
-@media only screen and (max-width: 650px) {}
-
-/*  Small Phones  */
-
-@media only screen and (max-width: 375px) {}
-
-/*  Small Phones  */
-
-@media only screen and (max-width: 350px) {}
-
-/* ===================================================================
-            Media Queries: Specials
-=================================================================== */
-
-/*  Small Laptop Screens  */
-
-@media only screen and (max-width: 1024px) {}
-
-/*  Small Laptop Screens  */
-
-@media only screen and (max-width: 1000px) {}
-
-/*  Larger Phones  */
-
-@media only screen and (max-width: 700px) {}
-
-/*  Larger Phones  */
-
-@media only screen and (max-width: 529px) {}
-
-/*  Small Phones  */
-
-@media only screen and (max-width: 350px) {}
-
-/* ===================================================================
-            Media Queries: Locations
-=================================================================== */
-
-/*  Large Screens & Desktop  */
-
-@media only screen and (max-width: 1110px) {}
-
-/*  Small Laptop Screens  */
-
-@media only screen and (max-width: 1000px) {}
-
-/*  Tablets  */
-
-@media only screen and (max-width: 850px) {}
-
-/*  Larger Phones  */
-
-@media only screen and (max-width: 600px) {}
-
-/*  Small Phones  */
-
-@media only screen and (max-width: 400px) {}
-
-/* ===================================================================
-            Media Queries: Opening Hours
-=================================================================== */
-
-/*  Small Laptop Screens  */
-
-@media only screen and (max-width: 1145px) {}
-
-/*  Large Screens & Desktop  */
-
-@media only screen and (max-width: 1000px) {}
-
-/*  Tablets  */
-
-@media only screen and (max-width: 850px) {}
-
-/*  Larger Phones  */
-
-@media only screen and (max-width: 600px) {}
-
-/*  Small Phones  */
-
-@media only screen and (max-width: 400px) {}
-
-
-/* ===================================================================
-            Media Queries: Privacy
-=================================================================== */
-
-/*  Small Laptop Screens  */
-
-@media only screen and (max-width: 1145px) {}
-
-/*  Large Screens & Desktop  */
-
-@media only screen and (max-width: 1000px) {}
-
-/*  Tablets  */
-
-@media only screen and (max-width: 900px) {}
-
-/*  Larger Phones  */
-
-@media only screen and (max-width: 600px) {}
-
-/*  Small Phones  */
-
-@media only screen and (max-width: 450px) {}
-
-/* ===================================================================
-            Media Queries: Contact
+            Media Queries: Find Us
 =================================================================== */
 
 /*  Small Laptop Screens  */
@@ -437,40 +173,27 @@
 /*  Tablets  */
 
 @media only screen and (max-width: 850px) {
-    section#contact-section {
+    section#find-us-section {
         padding: 10rem 0;
 
-        div.map-and-contact-form {
-            margin-top: 5rem;
-
-            img.googleMaps {
-                width: 100%;
-                display: block;
-                margin: 0 auto;
+        div.map-and-address {
+            div#map {
+                height: 30rem;
             }
 
-            div.contact-form {
-                width: 100%;
+
+            div.address-section {
+                p.onsight-team {
+                    width: 80%;
+                }
             }
         }
     }
 }
 
-/*  Larger Phones  */
-
-@media only screen and (max-width: 600px) {}
-
-/*  Small Phones  */
-
-@media only screen and (max-width: 465px) {}
-
 /* ===================================================================
             Media Queries: Footer
 =================================================================== */
-
-/*  Small Laptop Screens  */
-
-@media only screen and (max-width: 1145px) {}
 
 /*  Large Screens & Desktop  */
 
@@ -482,28 +205,21 @@
             flex-direction: column;
 
             div {
-                padding: 3rem 0;
-            }
-
-            div.navigation {
-                width: 100%;
+                padding: 3rem 0 0 0;
             }
 
             div.age-restriction,
             div.affilates {
                 width: 50%;
+                padding-left: 0;
+            }
+
+            div.follow-us {
+                padding-left: 0;
             }
         }
     }
 }
-
-/*  Tablets  */
-
-@media only screen and (max-width: 850px) {}
-
-/*  Larger Phones  */
-
-@media only screen and (max-width: 600px) {}
 
 /*  Small Phones  */
 

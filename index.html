@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="animated fadeIn">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
     <title>VapeViews | Top rated vape & vape products</title>
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://kit.fontawesome.com/65b5a983fe.js"></script>
+    <link rel="stylesheet" href="./css/animate.css">
 </head>
 
 <body>
@@ -332,45 +333,39 @@
     </section>
 
     <!--    /////////////////////////////////////////////////////////////////////
-                                    Contact Section
+                                    Find Us Section
 ///////////////////////////////////////////////////////////////////////////-->
 
-    <section id="contact-section">
+    <section id="find-us-section">
         <div class="container">
-            <h2 class="contact-hdr">Contact Us</h2>
-            <div class="map-and-contact-form">
-                <img src="./imgs/contact-map.jpg" alt="" class="googleMaps">
+            <h2 class="find-us-hdr">Find Us</h2>
+            <div class="map-and-address">
 
-                <div class="contact-form">
-                    <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                <!-- ************ Google Maps start ************ -->
+                <div id="map"></div>
+                <!-- ************ Google Maps End ************ -->
 
-                        <div class="form-name">
-                            <label for="name">Name:</label>
-                            <input type="text" name="name" id="name"
-                                value="<?php echo isset($_POST['name']) ? $name : ''; ?>" required>
-                        </div>
+                <div class="address-section">
+                    <h4 class="store-name">VapeViews London</h4>
+                    <p class="store-address">
+                        Trafalgar Square <br>
+                        Charing Cross, <br>
+                        London, UK <br>
+                    </p>
+                    <p class="store-postcode">
+                        WC2N 5DN
+                    </p>
 
-                        <div class="form-email">
-                            <label for="email">Email Address:</label>
-                            <input type="email" name="email" id="email"
-                                value="<?php echo isset($_POST['email']) ? $email : ''; ?>" required>
-                        </div>
-
-                        <div class="form-msg">
-                            <label for="message">Message:</label>
-                            <textarea name="message" id="message" required>$message : ''; ?>
-                        </textarea>
-                        </div>
-
-                        <div class="btn form-btn">
-                            <input type="submit" name="submit" value="Submit">
-                        </div>
-
-                    </form>
+                    <p class="onsight-team">
+                        Our on sight vape experts are more than happy to help. <br> Let's get you on the road to a
+                        smooth
+                        vaping
+                        experience, full of flavour!
+                    </p>
                 </div>
+
             </div>
         </div>
-
     </section>
 
     <!--    /////////////////////////////////////////////////////////////////////
@@ -406,23 +401,12 @@
                         or their respected products.</p>
                 </div>
 
-                <div class="follows-us">
+                <div class="follow-us">
                     <h4>Follow Us</h4>
                     <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-square"></i></a>
                     <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
-                </div>
-
-                <div class="newsletter">
-                    <h4>Newsletter</h4>
-                    <div class="search-area-wrapper">
-                        <input type="text" placeholder="Email Address">
-                        <input type="submit" name="submit" value="Sign Up">
-                    </div>
-
-
-
                 </div>
 
             </div>
@@ -457,6 +441,7 @@
 
     </footer>
 
+    <script src="./js/googleMaps.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

@@ -3,5 +3,5 @@ function openSlideMenu() {
 }
 
 function closeSlideMenu() {
-    document.getElementById('mobile-menu').style.top = '-75vh';
+    document.getElementById('mobile-menu').style.top = '-100vh';
 }

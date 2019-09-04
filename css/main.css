@@ -162,6 +162,7 @@ img {
 header {
   position: fixed;
   width: 100%;
+  z-index: 990;
 }
 
 header div.top-nav-logo-bar {
@@ -287,11 +288,11 @@ div.top-nav-menu-bar ul.top-nav-menu li a.active {
 
 div#mobile-menu {
   position: fixed;
-  top: -75vh;
+  top: -100vh;
   left: 0;
   right: 0;
   width: 100vw;
-  height: 75vh;
+  height: 100vh;
   background-color: #292828;
   -webkit-box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.12);
@@ -466,15 +467,15 @@ div.product-box a.buy-now-btn:hover {
   background-color: #242424;
 }
 
-section#contact-section {
+section#find-us-section {
   background-color: #292828;
   padding: 10rem 0;
 }
 
-section#contact-section h2.contact-hdr {
+section#find-us-section h2.find-us-hdr {
   font-size: 4.5rem;
   font-weight: 700;
-  color: #F5F5F5;
+  color: #8DC63F;
   text-align: center;
   border-bottom: solid rgba(189, 189, 189, 0.05) 1px;
   padding-bottom: 1rem;
@@ -482,83 +483,52 @@ section#contact-section h2.contact-hdr {
   margin: 0 auto;
 }
 
-section#contact-section div.map-and-contact-form {
+section#find-us-section div.map-and-address {
   margin-top: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-section#contact-section div.map-and-contact-form img.googleMaps {
-  width: 48%;
-  display: block;
+section#find-us-section div.map-and-address div#map {
+  width: 100%;
+  height: 50rem;
   margin: 0 auto;
+  border-radius: .3rem;
 }
 
-section#contact-section div.map-and-contact-form div.contact-form {
+section#find-us-section div.map-and-address div.address-section {
   margin-top: auto;
-  width: 48%;
-  margin-left: auto;
 }
 
-section#contact-section div.map-and-contact-form div.contact-form label {
-  display: block;
-  text-transform: uppercase;
+section#find-us-section div.map-and-address div.address-section h4.store-name {
   color: #F5F5F5;
-  font-weight: 400;
-  margin-top: 2rem;
-}
-
-section#contact-section div.map-and-contact-form div.contact-form input {
-  width: 100%;
-  height: 4rem;
-  border-radius: .3rem;
-  border: none;
-  margin-top: .5rem;
-  padding-left: 1rem;
-}
-
-section#contact-section div.map-and-contact-form div.contact-form textarea {
-  width: 100%;
-  height: 12.3rem;
-  border-radius: .3rem;
-  border: none;
-  margin-top: .5rem;
-  text-align: left;
-  padding-left: 1rem;
-}
-
-section#contact-section div.map-and-contact-form div.contact-form div.form-btn input[type=submit] {
-  margin-top: 1rem;
-  background-color: #8DC63F;
-  color: #F5F5F5;
-  font-size: 1.4rem;
+  font-size: 2.5rem;
   font-weight: 500;
-  display: block;
-  width: 11.3rem;
-  margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s;
-  text-transform: uppercase;
+  padding: 3rem 0 2rem 0;
+  letter-spacing: .1rem;
 }
 
-section#contact-section div.map-and-contact-form div.contact-form div.form-btn input[type=submit]:hover {
-  background-color: #7eae3a;
+section#find-us-section div.map-and-address div.address-section p.store-address {
+  color: #AAA9A9;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+}
+
+section#find-us-section div.map-and-address div.address-section p.store-postcode {
+  color: #AAA9A9;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: .15rem;
+  padding-bottom: 7rem;
+}
+
+section#find-us-section div.map-and-address div.address-section p.onsight-team {
+  color: #AAA9A9;
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 60%;
+  line-height: 1.5;
 }
 
 footer {
@@ -602,8 +572,7 @@ footer div.footer-top-section a:hover {
 }
 
 footer div.footer-top-section div.navigation {
-  width: 10%;
-  padding: 0;
+  padding-left: 0;
 }
 
 footer div.footer-top-section div.navigation a {
@@ -611,7 +580,15 @@ footer div.footer-top-section div.navigation a {
   display: block;
 }
 
-footer div.footer-top-section div.follows-us a {
+footer div.footer-top-section div.affilates {
+  padding-left: 5rem;
+}
+
+footer div.footer-top-section div.follow-us {
+  padding-left: 5rem;
+}
+
+footer div.footer-top-section div.follow-us a {
   width: 3.5rem;
   height: 3.5rem;
   background-color: #575757;
@@ -629,55 +606,15 @@ footer div.footer-top-section div.follows-us a {
   text-decoration: none;
 }
 
-footer div.footer-top-section div.follows-us a i.fab {
+footer div.footer-top-section div.follow-us a i.fab {
   color: #8DC63F;
   font-size: 1.8rem;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
-footer div.footer-top-section div.follows-us a i.fab:hover {
+footer div.footer-top-section div.follow-us a i.fab:hover {
   color: #7eae3a;
-}
-
-footer div.footer-top-section div.newsletter div.search-area-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 0;
-}
-
-footer div.footer-top-section div.newsletter div.search-area-wrapper input[type=text] {
-  height: 3rem;
-  border-radius: .5rem;
-  border: none;
-  padding: 0 1rem;
-}
-
-footer div.footer-top-section div.newsletter div.search-area-wrapper input[type=submit] {
-  background-color: #8DC63F;
-  color: #F5F5F5;
-  font-size: 1.2rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  display: block;
-  height: 3rem;
-  width: 8rem;
-  margin-left: .5rem;
-  text-align: center;
-  border: none;
-  border-radius: .5rem;
-  cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-footer div.footer-top-section div.newsletter div.search-area-wrapper input[type=submit]:hover {
-  background-color: #7eae3a;
 }
 
 footer div.footer-btm-section {
@@ -1067,7 +1004,7 @@ section.vape-accessories-product-section {
 }
 
 /* ===================================================================
-            Media Queries: General Styles
+            Media Queries: Top Nav Styles
 =================================================================== */
 /*  Large Screens & Desktop  */
 @media only screen and (max-width: 1050px) {
@@ -1095,9 +1032,6 @@ section.vape-accessories-product-section {
   }
 }
 
-/*  Large Screens & Desktop  */
-/*  Small Laptop Screens  */
-/*  Tablets  */
 /*  Larger Phones  */
 @media only screen and (max-width: 370px) {
   header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.top-nav-logo-and-stars img {
@@ -1108,10 +1042,6 @@ section.vape-accessories-product-section {
 /* ===================================================================
             Media Queries: Homepage
 =================================================================== */
-/*  Large Screens & Desktop  */
-/*  Large Screens & Desktop  */
-/*  Large Screens & Desktop  */
-/*  Large Screens & Desktop  */
 /*  Large Screens & Desktop  */
 @media only screen and (max-width: 1050px) {
   section#homepage-section {
@@ -1184,110 +1114,26 @@ section.vape-accessories-product-section {
   }
 }
 
-/*  Phones  */
 /* ===================================================================
-            Media Queries: Menu - Menu Nav
-=================================================================== */
-/*  Large Screens & Desktop  */
-/*  Small Laptop Screens  */
-/*  Tablets  */
-/*  Larger Phones  */
-/*  Medium Phones  */
-/*  Small Phones  */
-/* ===================================================================
-            Media Queries: Menu - Brunch
-=================================================================== */
-/*  Large Screens & Desktop  */
-/*  Small Laptop Screens  */
-/*  Tablets  */
-/*  Larger Phones  */
-/*  Medium Phones  */
-/*  Small Phones  */
-/* ===================================================================
-            Media Queries: Menu - Mains
-=================================================================== */
-/*  Large Screens & Desktop  */
-/*  Small Laptop Screens  */
-/*  Tablets  */
-/*  Larger Phones  */
-/*  Small Phones  */
-/* ===================================================================
-            Media Queries: Menu - Beers
-=================================================================== */
-/*  Large Screens & Desktop  */
-/*  Small Laptop Screens  */
-/*  Tablets  */
-/*  Larger Phones  */
-/*  Small Phones  */
-/* ===================================================================
-            Media Queries: Bookings
-=================================================================== */
-/*  Large Screens & Desktop  */
-/*  Small Laptop Screens  */
-/*  Tablets  */
-/*  Larger Phones  */
-/*  Small Phones  */
-/*  Small Phones  */
-/* ===================================================================
-            Media Queries: Specials
-=================================================================== */
-/*  Small Laptop Screens  */
-/*  Small Laptop Screens  */
-/*  Larger Phones  */
-/*  Larger Phones  */
-/*  Small Phones  */
-/* ===================================================================
-            Media Queries: Locations
-=================================================================== */
-/*  Large Screens & Desktop  */
-/*  Small Laptop Screens  */
-/*  Tablets  */
-/*  Larger Phones  */
-/*  Small Phones  */
-/* ===================================================================
-            Media Queries: Opening Hours
-=================================================================== */
-/*  Small Laptop Screens  */
-/*  Large Screens & Desktop  */
-/*  Tablets  */
-/*  Larger Phones  */
-/*  Small Phones  */
-/* ===================================================================
-            Media Queries: Privacy
-=================================================================== */
-/*  Small Laptop Screens  */
-/*  Large Screens & Desktop  */
-/*  Tablets  */
-/*  Larger Phones  */
-/*  Small Phones  */
-/* ===================================================================
-            Media Queries: Contact
+            Media Queries: Find Us
 =================================================================== */
 /*  Small Laptop Screens  */
 /*  Tablets  */
 @media only screen and (max-width: 850px) {
-  section#contact-section {
+  section#find-us-section {
     padding: 10rem 0;
   }
-  section#contact-section div.map-and-contact-form {
-    margin-top: 5rem;
+  section#find-us-section div.map-and-address div#map {
+    height: 30rem;
   }
-  section#contact-section div.map-and-contact-form img.googleMaps {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-  }
-  section#contact-section div.map-and-contact-form div.contact-form {
-    width: 100%;
+  section#find-us-section div.map-and-address div.address-section p.onsight-team {
+    width: 80%;
   }
 }
 
-/*  Larger Phones  */
-/*  Small Phones  */
 /* ===================================================================
             Media Queries: Footer
 =================================================================== */
-/*  Small Laptop Screens  */
 /*  Large Screens & Desktop  */
 @media only screen and (max-width: 1047px) {
   footer {
@@ -1300,19 +1146,18 @@ section.vape-accessories-product-section {
             flex-direction: column;
   }
   footer div.footer-top-section div {
-    padding: 3rem 0;
-  }
-  footer div.footer-top-section div.navigation {
-    width: 100%;
+    padding: 3rem 0 0 0;
   }
   footer div.footer-top-section div.age-restriction,
   footer div.footer-top-section div.affilates {
     width: 50%;
+    padding-left: 0;
+  }
+  footer div.footer-top-section div.follow-us {
+    padding-left: 0;
   }
 }
 
-/*  Tablets  */
-/*  Larger Phones  */
 /*  Small Phones  */
 @media only screen and (max-width: 450px) {
   footer div.footer-top-section div.age-restriction,
