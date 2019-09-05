@@ -193,7 +193,7 @@ header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.top-nav-logo-and-st
           align-items: center;
 }
 
-header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.top-nav-logo-and-stars img {
+header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.top-nav-logo-and-stars img.top-nav-stars {
   padding-left: 3rem;
 }
 
@@ -1033,9 +1033,13 @@ section.vape-accessories-product-section {
 }
 
 /*  Larger Phones  */
-@media only screen and (max-width: 370px) {
-  header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.top-nav-logo-and-stars img {
-    padding-left: 0;
+@media only screen and (max-width: 420px) {
+  header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.top-nav-logo-and-stars a img.top-nav-logo {
+    width: 15rem;
+    height: auto;
+  }
+  header div.top-nav-logo-bar div.top-nav-logo-bar-wrapper div.top-nav-logo-and-stars img.top-nav-stars {
+    padding-left: 2rem;
   }
 }
 

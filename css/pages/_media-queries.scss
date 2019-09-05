@@ -44,13 +44,20 @@
 
 /*  Larger Phones  */
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 420px) {
     header {
         div.top-nav-logo-bar {
             div.top-nav-logo-bar-wrapper {
                 div.top-nav-logo-and-stars {
-                    img {
-                        padding-left: 0;
+                    a {
+                        img.top-nav-logo {
+                            width: 15rem;
+                            height: auto;
+                        }
+                    }
+
+                    img.top-nav-stars {
+                        padding-left: 2rem;
                     }
                 }
             }
