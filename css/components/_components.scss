@@ -85,7 +85,7 @@ div.product-box {
 
 section#find-us-section {
     background-color: $clr-contact-bg;
-    padding: 10rem 0;
+    padding: 8rem 0;
 
     h2.find-us-hdr {
         font-size: 4.5rem;
@@ -96,6 +96,16 @@ section#find-us-section {
         padding-bottom: 1rem;
         width: 100%;
         margin: 0 auto;
+    }
+
+    p.on-site-team {
+        color: $clr-footer-txt;
+        font-size: 1.6rem;
+        font-weight: 400;
+        width: 80%;
+        line-height: 1.5;
+        text-align: center;
+        margin: 3rem auto 0 auto;
     }
 
     div.map-and-address {
@@ -133,15 +143,6 @@ section#find-us-section {
                 font-weight: 400;
                 line-height: 1.5;
                 letter-spacing: .15rem;
-                padding-bottom: 7rem;
-            }
-
-            p.onsight-team {
-                color: $clr-footer-txt;
-                font-size: 1.6rem;
-                font-weight: 400;
-                width: 60%;
-                line-height: 1.5;
             }
         }
     }

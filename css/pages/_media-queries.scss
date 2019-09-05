@@ -181,19 +181,26 @@
 
 @media only screen and (max-width: 850px) {
     section#find-us-section {
-        padding: 10rem 0;
+        p.on-site-team {
+            width: 90%;
+            text-align: left;
+            margin: 3rem 0;
+        }
 
         div.map-and-address {
             div#map {
                 height: 30rem;
             }
+        }
+    }
+}
 
+/*  Phones  */
 
-            div.address-section {
-                p.onsight-team {
-                    width: 80%;
-                }
-            }
+@media only screen and (max-width: 450px) {
+    section#find-us-section {
+        p.on-site-team {
+            width: 100%;
         }
     }
 }

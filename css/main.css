@@ -469,7 +469,7 @@ div.product-box a.buy-now-btn:hover {
 
 section#find-us-section {
   background-color: #292828;
-  padding: 10rem 0;
+  padding: 8rem 0;
 }
 
 section#find-us-section h2.find-us-hdr {
@@ -481,6 +481,16 @@ section#find-us-section h2.find-us-hdr {
   padding-bottom: 1rem;
   width: 100%;
   margin: 0 auto;
+}
+
+section#find-us-section p.on-site-team {
+  color: #AAA9A9;
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 80%;
+  line-height: 1.5;
+  text-align: center;
+  margin: 3rem auto 0 auto;
 }
 
 section#find-us-section div.map-and-address {
@@ -520,15 +530,6 @@ section#find-us-section div.map-and-address div.address-section p.store-postcode
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: .15rem;
-  padding-bottom: 7rem;
-}
-
-section#find-us-section div.map-and-address div.address-section p.onsight-team {
-  color: #AAA9A9;
-  font-size: 1.6rem;
-  font-weight: 400;
-  width: 60%;
-  line-height: 1.5;
 }
 
 footer {
@@ -1124,14 +1125,20 @@ section.vape-accessories-product-section {
 /*  Small Laptop Screens  */
 /*  Tablets  */
 @media only screen and (max-width: 850px) {
-  section#find-us-section {
-    padding: 10rem 0;
+  section#find-us-section p.on-site-team {
+    width: 90%;
+    text-align: left;
+    margin: 3rem 0;
   }
   section#find-us-section div.map-and-address div#map {
     height: 30rem;
   }
-  section#find-us-section div.map-and-address div.address-section p.onsight-team {
-    width: 80%;
+}
+
+/*  Phones  */
+@media only screen and (max-width: 450px) {
+  section#find-us-section p.on-site-team {
+    width: 100%;
   }
 }
 
