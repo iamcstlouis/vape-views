@@ -29,7 +29,7 @@ section#homepage-section {
         text-align: center;
     }
 
-    p.homepage-sub-hdr {
+    h2.homepage-sub-hdr {
         color: $clr-accent;
         font-size: 3.3rem;
         font-weight: 300;
@@ -43,7 +43,7 @@ section#homepage-section {
         div.homepage-left-side {
             width: 40%;
 
-            h2.homepage-intro-txt-sub-hdr {
+            h3.homepage-intro-txt-sub-hdr {
                 font-size: 3.4rem;
                 color: $clr-section-hdr-dark;
                 font-weight: 900;

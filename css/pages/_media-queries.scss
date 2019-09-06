@@ -79,7 +79,7 @@
         div.homepage-content {
             div.homepage-left-side {
 
-                div.homepage-intro-txt-sub-hdr {
+                h3.homepage-intro-txt-sub-hdr {
                     margin-top: 3rem;
                 }
             }
@@ -92,7 +92,7 @@
 @media only screen and (max-width: 960px) {
 
     section#homepage-section {
-        p.homepage-sub-hdr {
+        h2.homepage-sub-hdr {
             width: 60%;
             margin: 0 auto;
         }
@@ -126,21 +126,21 @@
 @media only screen and (max-width: 600px) {
 
     section#homepage-section {
-        .homepage-sub-hdr {
+        h2.homepage-sub-hdr {
             width: 95%;
             margin: 0 auto;
         }
 
-        .homepage-content {
-            .homepage-left-side {
-                .homepage-intro-txt-sub-hdr {
+        div.homepage-content {
+            div.homepage-left-side {
+                h3.homepage-intro-txt-sub-hdr {
                     font-size: 3.4rem;
                     color: $clr-section-hdr-dark;
                     margin-top: 0;
                 }
             }
 
-            .homepage-right-side {
+            div.homepage-right-side {
                 width: 100%;
             }
         }
@@ -155,13 +155,13 @@
             font-size: 3.5rem;
         }
 
-        p.homepage-sub-hdr {
+        h2.homepage-sub-hdr {
             font-size: 2.5rem;
         }
 
         div.homepage-content {
             div.homepage-left-side {
-                h2.homepage-intro-txt-sub-hdr {
+                h3.homepage-intro-txt-sub-hdr {
                     font-size: 3rem;
                 }
             }
@@ -172,10 +172,6 @@
 /* ===================================================================
             Media Queries: Find Us
 =================================================================== */
-
-/*  Small Laptop Screens  */
-
-@media only screen and (max-width: 1000px) {}
 
 /*  Tablets  */
 

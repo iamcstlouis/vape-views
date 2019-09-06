@@ -678,7 +678,7 @@ section#homepage-section h1.homepage-hdr {
   text-align: center;
 }
 
-section#homepage-section p.homepage-sub-hdr {
+section#homepage-section h2.homepage-sub-hdr {
   color: #8DC63F;
   font-size: 3.3rem;
   font-weight: 300;
@@ -696,7 +696,7 @@ section#homepage-section div.homepage-content div.homepage-left-side {
   width: 40%;
 }
 
-section#homepage-section div.homepage-content div.homepage-left-side h2.homepage-intro-txt-sub-hdr {
+section#homepage-section div.homepage-content div.homepage-left-side h3.homepage-intro-txt-sub-hdr {
   font-size: 3.4rem;
   color: #292828;
   font-weight: 900;
@@ -847,7 +847,7 @@ section#e-liquids-hdr-section h1.e-liquids-hdr {
   text-align: center;
 }
 
-section#e-liquids-hdr-section p.e-liquids-sub-hdr {
+section#e-liquids-hdr-section h2.e-liquids-sub-hdr {
   color: #8DC63F;
   font-size: 3.3rem;
   font-weight: 300;
@@ -880,7 +880,7 @@ section#vape-kits-hdr-section h1.vape-kits-hdr {
   text-align: center;
 }
 
-section#vape-kits-hdr-section p.vape-kits-sub-hdr {
+section#vape-kits-hdr-section h2.vape-kits-sub-hdr {
   color: #8DC63F;
   font-size: 3.3rem;
   font-weight: 300;
@@ -914,7 +914,7 @@ section#vape-coils-hdr-section h1.vape-coils-hdr {
   text-align: center;
 }
 
-section#vape-coils-hdr-section p.vape-coils-sub-hdr {
+section#vape-coils-hdr-section h2.vape-coils-sub-hdr {
   color: #8DC63F;
   font-size: 3.3rem;
   font-weight: 300;
@@ -948,7 +948,7 @@ section#vape-tanks-hdr-section h1.vape-tanks-hdr {
   text-align: center;
 }
 
-section#vape-tanks-hdr-section p.vape-tanks-sub-hdr {
+section#vape-tanks-hdr-section h2.vape-tanks-sub-hdr {
   color: #8DC63F;
   font-size: 3.3rem;
   font-weight: 300;
@@ -1052,14 +1052,14 @@ section.vape-accessories-product-section {
   section#homepage-section {
     padding-top: calc(27vh - 5rem);
   }
-  section#homepage-section div.homepage-content div.homepage-left-side div.homepage-intro-txt-sub-hdr {
+  section#homepage-section div.homepage-content div.homepage-left-side h3.homepage-intro-txt-sub-hdr {
     margin-top: 3rem;
   }
 }
 
 /*  Tablets  */
 @media only screen and (max-width: 960px) {
-  section#homepage-section p.homepage-sub-hdr {
+  section#homepage-section h2.homepage-sub-hdr {
     width: 60%;
     margin: 0 auto;
   }
@@ -1092,16 +1092,16 @@ section.vape-accessories-product-section {
 
 /*  Phones  */
 @media only screen and (max-width: 600px) {
-  section#homepage-section .homepage-sub-hdr {
+  section#homepage-section h2.homepage-sub-hdr {
     width: 95%;
     margin: 0 auto;
   }
-  section#homepage-section .homepage-content .homepage-left-side .homepage-intro-txt-sub-hdr {
+  section#homepage-section div.homepage-content div.homepage-left-side h3.homepage-intro-txt-sub-hdr {
     font-size: 3.4rem;
     color: #292828;
     margin-top: 0;
   }
-  section#homepage-section .homepage-content .homepage-right-side {
+  section#homepage-section div.homepage-content div.homepage-right-side {
     width: 100%;
   }
 }
@@ -1111,10 +1111,10 @@ section.vape-accessories-product-section {
   section#homepage-section h1.homepage-hdr {
     font-size: 3.5rem;
   }
-  section#homepage-section p.homepage-sub-hdr {
+  section#homepage-section h2.homepage-sub-hdr {
     font-size: 2.5rem;
   }
-  section#homepage-section div.homepage-content div.homepage-left-side h2.homepage-intro-txt-sub-hdr {
+  section#homepage-section div.homepage-content div.homepage-left-side h3.homepage-intro-txt-sub-hdr {
     font-size: 3rem;
   }
 }
@@ -1122,7 +1122,6 @@ section.vape-accessories-product-section {
 /* ===================================================================
             Media Queries: Find Us
 =================================================================== */
-/*  Small Laptop Screens  */
 /*  Tablets  */
 @media only screen and (max-width: 850px) {
   section#find-us-section p.on-site-team {
